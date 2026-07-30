@@ -26,7 +26,7 @@
   }
   img{max-width:100%;display:block;}
   a{text-decoration:none;}
-  .container{max-width:1000px;margin:0 auto;padding:0 20px;}
+  .container{max-width:1080px;margin:0 auto;padding:0 24px;}
 
   /* Top offer bar */
   .top-bar{
@@ -43,52 +43,55 @@
   /* Hero */
   .hero{
     background:var(--navy);
-    padding:36px 0 30px;
+    padding:48px 0 40px;
   }
   .hero-headline{
     background:var(--navy-light);
     border:2px solid var(--gold);
     border-radius:10px;
-    padding:20px 24px;
+    padding:26px 30px;
     text-align:center;
     color:#fff;
-    font-size:22px;
+    font-size:26px;
     font-weight:700;
-    line-height:1.35;
-    margin-bottom:18px;
+    line-height:1.4;
+    margin-bottom:22px;
   }
   .hero-headline .hl{color:var(--gold);}
   .hero-sub{
     text-align:center;
     color:#dcdfe8;
     font-style:italic;
-    font-size:15px;
-    margin-bottom:24px;
+    font-size:16px;
+    margin-bottom:30px;
   }
   .hero-main{
     display:flex;
-    gap:28px;
+    gap:36px;
     align-items:center;
     flex-wrap:wrap;
+    justify-content:center;
   }
   .hero-main .product-shot{
-    flex:0 0 260px;
+    flex:0 0 360px;
+    max-width:360px;
     background:#fff;
-    border-radius:8px;
-    padding:14px;
+    border-radius:10px;
+    padding:20px;
   }
+  .hero-main .product-shot img{width:100%;height:auto;}
   .hero-main .features{
-    flex:1 1 320px;
-    min-width:260px;
+    flex:1 1 360px;
+    min-width:280px;
   }
   .feature-item{
     display:flex;
     gap:10px;
     align-items:flex-start;
     color:#fff;
-    font-size:14.5px;
+    font-size:15.5px;
     font-weight:600;
-    padding:10px 0;
+    padding:13px 0;
     border-bottom:1px solid rgba(255,255,255,.15);
   }
   .feature-item:before{content:"🔖";flex-shrink:0;}
@@ -146,30 +149,30 @@
   .social-proof{color:var(--gold);font-weight:700;margin-top:14px;font-size:14px;}
   .delivery-meta{color:var(--gray);font-size:12px;margin-top:10px;}
 
-  section{padding:44px 0;}
+  section{padding:60px 0;}
   .section-dark{background:var(--navy);color:#fff;}
   .section-cream{background:var(--cream);}
   h2.section-title{
     text-align:center;
-    font-size:26px;
+    font-size:30px;
     font-weight:800;
-    margin-bottom:26px;
+    margin-bottom:32px;
   }
   h2.section-title span{color:var(--gold);}
 
   .cards-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:16px;
+    gap:20px;
   }
   .card{
     background:#fff;
     border-radius:8px;
-    padding:20px;
+    padding:26px;
     box-shadow:0 2px 8px rgba(0,0,0,.06);
   }
-  .card h3{font-size:15px;margin-bottom:8px;display:flex;gap:8px;align-items:center;}
-  .card p{font-size:13.5px;color:var(--gray);}
+  .card h3{font-size:16.5px;margin-bottom:10px;display:flex;gap:8px;align-items:center;}
+  .card p{font-size:14px;color:var(--gray);}
 
   .risk-list{display:flex;flex-direction:column;gap:2px;margin-top:22px;}
   .risk-item{
@@ -192,7 +195,7 @@
   .category-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:14px;
+    gap:18px;
   }
   .cat-card{
     background:#232a4a;
@@ -200,12 +203,16 @@
     overflow:hidden;
     text-align:center;
   }
-  .cat-card img{width:100%;height:170px;object-fit:cover;background:#fff;}
-  .cat-card span{display:block;padding:10px 6px;font-size:13px;font-weight:600;}
+  .cat-card img{width:100%;height:210px;object-fit:cover;background:#fff;}
+  .cat-card span{display:block;padding:12px 8px;font-size:14px;font-weight:600;}
 
-  /* Generic slider */
+  /* Generic slider — slide widths are set inline by JS (initSlider/adjust*PerView)
+     so CSS and JS can never disagree on how many items are per view. */
   .slider{
     position:relative;
+    padding:0 44px;
+  }
+  .slider-viewport{
     overflow:hidden;
     border-radius:10px;
   }
@@ -214,51 +221,46 @@
     transition:transform .4s ease;
   }
   .slider-track .slide{
-    flex:0 0 100%;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:6px;
+    padding:8px;
+    min-width:0;
   }
   .slider-track .slide img{
-    max-height:380px;
-    width:auto;
+    width:100%;
+    height:auto;
+    max-height:420px;
+    object-fit:contain;
     margin:0 auto;
     border-radius:8px;
+    background:#fff;
   }
   .slider-nav{
     position:absolute;top:50%;transform:translateY(-50%);
-    background:rgba(0,0,0,.45);color:#fff;border:none;
-    width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;
+    background:rgba(0,0,0,.55);color:#fff;border:none;
+    width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:18px;
     display:flex;align-items:center;justify-content:center;
+    z-index:2;
   }
-  .slider-nav.prev{left:8px;}
-  .slider-nav.next{right:8px;}
-  .slider-dots{display:flex;justify-content:center;gap:6px;margin-top:12px;}
+  .slider-nav.prev{left:0;}
+  .slider-nav.next{right:0;}
+  .slider-dots{display:flex;justify-content:center;gap:6px;margin-top:14px;}
   .slider-dots .dot{
-    width:8px;height:8px;border-radius:50%;background:#ccc;cursor:pointer;border:none;
+    width:9px;height:9px;border-radius:50%;background:#9aa0b5;cursor:pointer;border:none;
   }
   .slider-dots .dot.active{background:var(--red);}
 
-  /* multi-item slider (3 visible) */
-  .multi-slider .slider-track .slide{
-    flex:0 0 33.333%;
-    padding:8px;
-  }
-  .multi-slider .slider-track .slide img{max-height:260px;}
-  @media (max-width:700px){
-    .multi-slider .slider-track .slide{flex:0 0 100%;}
-  }
-
-  .whatsapp-slider .slide img{max-height:420px;border-radius:14px;}
+  .whatsapp-slider .slider-track .slide img{max-height:480px;border-radius:14px;background:none;}
+  .sample-slider .slider-track .slide img{max-height:340px;}
 
   /* checklist */
-  .checklist{display:flex;flex-direction:column;gap:10px;max-width:640px;margin:0 auto;}
+  .checklist{display:flex;flex-direction:column;gap:12px;max-width:680px;margin:0 auto;}
   .checklist .item{
     border:2px solid var(--green);
     border-radius:8px;
-    padding:12px 16px;
-    font-size:14.5px;
+    padding:15px 20px;
+    font-size:15.5px;
     font-weight:600;
     display:flex;
     align-items:center;
@@ -274,17 +276,17 @@
   .testi-grid{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    gap:16px;
+    gap:20px;
   }
   .testi-card{
     background:#fff;
     border-radius:8px;
-    padding:18px;
+    padding:22px;
     box-shadow:0 2px 8px rgba(0,0,0,.06);
-    font-size:13px;
+    font-size:13.5px;
   }
-  .testi-card .name{font-weight:700;font-size:14px;margin-top:8px;}
-  .testi-card .loc{color:var(--gray);font-size:12px;margin-bottom:8px;}
+  .testi-card .name{font-weight:700;font-size:14.5px;margin-top:10px;}
+  .testi-card .loc{color:var(--gray);font-size:12.5px;margin-bottom:8px;}
 
   /* steps */
   .steps{display:flex;flex-direction:column;gap:16px;max-width:600px;margin:0 auto;}
@@ -485,16 +487,18 @@
 <section class="section-dark">
   <div class="container">
     <h2 class="section-title">Join 94,000+ Happy Parents <span>Supercharging Their Child's Learning</span><br><span style="font-size:15px;font-weight:400;">Loved, Trusted &amp; Shared on WhatsApp 💚</span></h2>
-    <div class="slider whatsapp-slider multi-slider" id="waSlider" style="max-width:800px;margin:0 auto;">
-      <div class="slider-track" id="waTrack">
-        <div class="slide"><img src="whatsappfeedbackpic1.jpeg" alt="Parent feedback"></div>
-        <div class="slide"><img src="whatsappfeedbackpic2.jpeg" alt="Parent feedback"></div>
-        <div class="slide"><img src="whatsappfeedbackpic3.jpeg" alt="Parent feedback"></div>
-        <div class="slide"><img src="whatsappfeedbackpic4.jpeg" alt="Parent feedback"></div>
-        <div class="slide"><img src="whatsappfeedbackpic5.jpeg" alt="Parent feedback"></div>
+    <div class="slider whatsapp-slider" id="waSlider" style="max-width:520px;margin:0 auto;">
+      <div class="slider-viewport">
+        <div class="slider-track" id="waTrack">
+          <div class="slide"><img src="whatsappfeedbackpic1.jpeg" alt="Parent feedback"></div>
+          <div class="slide"><img src="whatsappfeedbackpic2.jpeg" alt="Parent feedback"></div>
+          <div class="slide"><img src="whatsappfeedbackpic3.jpeg" alt="Parent feedback"></div>
+          <div class="slide"><img src="whatsappfeedbackpic4.jpeg" alt="Parent feedback"></div>
+          <div class="slide"><img src="whatsappfeedbackpic5.jpeg" alt="Parent feedback"></div>
+        </div>
       </div>
-      <button class="slider-nav prev" onclick="moveSlider('waTrack',-1,5,1)">&#10094;</button>
-      <button class="slider-nav next" onclick="moveSlider('waTrack',1,5,1)">&#10095;</button>
+      <button class="slider-nav prev" onclick="moveSlider('waTrack',-1)">&#10094;</button>
+      <button class="slider-nav next" onclick="moveSlider('waTrack',1)">&#10095;</button>
     </div>
     <div class="slider-dots" id="waDots"></div>
   </div>
@@ -531,22 +535,24 @@
 <section class="section-dark">
   <div class="container">
     <h2 class="section-title">Here Are The Samples</h2>
-    <div class="slider multi-slider" id="sampleSlider" style="max-width:900px;margin:0 auto;">
-      <div class="slider-track" id="sampleTrack">
-        <div class="slide"><img src="samples1.png" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples2.png" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples3.png" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples4.webp" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples5.webp" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples6.webp" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples7.webp" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples8.png" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples9.webp" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples10.png" alt="sample worksheet"></div>
-        <div class="slide"><img src="samples11.png" alt="sample worksheet"></div>
+    <div class="slider sample-slider" id="sampleSlider" style="max-width:960px;margin:0 auto;">
+      <div class="slider-viewport">
+        <div class="slider-track" id="sampleTrack">
+          <div class="slide"><img src="samples1.png" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples2.png" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples3.png" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples4.webp" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples5.webp" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples6.webp" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples7.webp" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples8.png" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples9.webp" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples10.png" alt="sample worksheet"></div>
+          <div class="slide"><img src="samples11.png" alt="sample worksheet"></div>
+        </div>
       </div>
-      <button class="slider-nav prev" onclick="moveSlider('sampleTrack',-1,11,3)">&#10094;</button>
-      <button class="slider-nav next" onclick="moveSlider('sampleTrack',1,11,3)">&#10095;</button>
+      <button class="slider-nav prev" onclick="moveSlider('sampleTrack',-1)">&#10094;</button>
+      <button class="slider-nav next" onclick="moveSlider('sampleTrack',1)">&#10095;</button>
     </div>
     <div class="slider-dots" id="sampleDots"></div>
     <div style="text-align:center;margin-top:26px;">
@@ -743,54 +749,77 @@ document.querySelectorAll('.faq-q').forEach(btn=>{
   });
 });
 
-/* ---------- Generic slider engine ---------- */
+/* ---------- Generic slider engine ----------
+   Slide width (flex-basis) is always set here in JS, from the same
+   perView value used to calculate the translateX% — so the two can
+   never drift out of sync (that mismatch was what broke the sliders
+   before: CSS said 3-per-view while the JS math assumed 1-per-view). */
 const sliderState = {};
-function initSlider(trackId,total,perView,dotsId){
-  sliderState[trackId] = {index:0, total, perView};
-  if(dotsId){
-    const dotsEl = document.getElementById(dotsId);
-    const dotCount = Math.max(1,total - perView + 1);
-    for(let i=0;i<dotCount;i++){
-      const d = document.createElement('button');
-      d.className = 'dot'+(i===0?' active':'');
-      d.onclick = ()=>goToSlide(trackId,i,total,perView,dotsId);
-      dotsEl.appendChild(d);
-    }
+
+function applyPerView(trackId, perView){
+  const track = document.getElementById(trackId);
+  [...track.children].forEach(slide=>{
+    slide.style.flex = `0 0 ${100/perView}%`;
+  });
+  sliderState[trackId].perView = perView;
+}
+
+function rebuildDots(trackId, dotsId){
+  const st = sliderState[trackId];
+  const dotsEl = document.getElementById(dotsId);
+  dotsEl.innerHTML = '';
+  const dotCount = Math.max(1, st.total - st.perView + 1);
+  for(let i=0;i<dotCount;i++){
+    const d = document.createElement('button');
+    d.className = 'dot'+(i===0?' active':'');
+    d.onclick = ()=>goToSlide(trackId, i, dotsId);
+    dotsEl.appendChild(d);
   }
 }
+
 function updateDots(trackId,dotsId){
-  if(!dotsId) return;
   const dotsEl = document.getElementById(dotsId);
   const st = sliderState[trackId];
   [...dotsEl.children].forEach((d,i)=>d.classList.toggle('active', i===st.index));
 }
-function goToSlide(trackId, idx, total, perView, dotsId){
+
+function goToSlide(trackId, idx, dotsId){
   const st = sliderState[trackId];
-  const maxIndex = Math.max(0, total - perView);
+  const maxIndex = Math.max(0, st.total - st.perView);
   st.index = Math.min(Math.max(idx,0), maxIndex);
   const track = document.getElementById(trackId);
-  const pct = (100/perView) * st.index;
+  const pct = (100/st.perView) * st.index;
   track.style.transform = `translateX(-${pct}%)`;
   updateDots(trackId,dotsId);
 }
-function moveSlider(trackId, dir, total, perView){
+
+function moveSlider(trackId, dir){
+  const dotsId = trackId === 'waTrack' ? 'waDots' : 'sampleDots';
   const st = sliderState[trackId];
-  let dotsId = trackId === 'waTrack' ? 'waDots' : (trackId === 'sampleTrack' ? 'sampleDots' : null);
-  goToSlide(trackId, st.index+dir, total, perView, dotsId);
+  goToSlide(trackId, st.index+dir, dotsId);
 }
 
-initSlider('waTrack',5,1,'waDots');
-initSlider('sampleTrack',11,3,'sampleDots');
+function initSlider(trackId, total, perView, dotsId){
+  sliderState[trackId] = {index:0, total, perView};
+  applyPerView(trackId, perView);
+  rebuildDots(trackId, dotsId);
+  goToSlide(trackId, 0, dotsId);
+}
+
+initSlider('waTrack', 5, 1, 'waDots');
+initSlider('sampleTrack', 11, window.innerWidth <= 700 ? 1 : 3, 'sampleDots');
 
 /* Auto-play both sliders */
-setInterval(()=>moveSlider('waTrack',1,5,1), 4000);
-setInterval(()=>moveSlider('sampleTrack',1,11,3), 3500);
+setInterval(()=>moveSlider('waTrack',1), 4000);
+setInterval(()=>moveSlider('sampleTrack',1), 3500);
 
-/* Adjust perView for sample slider responsively */
+/* Keep the samples slider's per-view count in sync with viewport width */
 function adjustSamplePerView(){
   const perView = window.innerWidth <= 700 ? 1 : 3;
-  sliderState['sampleTrack'].perView = perView;
-  goToSlide('sampleTrack', 0, 11, perView, 'sampleDots');
+  if(sliderState['sampleTrack'].perView === perView) return;
+  applyPerView('sampleTrack', perView);
+  rebuildDots('sampleTrack', 'sampleDots');
+  goToSlide('sampleTrack', 0, 'sampleDots');
 }
 window.addEventListener('resize', adjustSamplePerView);
 </script>
