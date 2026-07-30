@@ -3,794 +3,796 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Growvio — 10,000+ Kids Worksheets Bundle | Ages 2-7</title>
-<meta name="description" content="Printable worksheets for ages 2-7. Tracing, numbers, alphabets, puzzles and more. Instant download, print anytime.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230E6E63'/%3E%3Cpath d='M50 70 C50 70 30 60 30 40 C30 28 40 24 50 32 C60 24 70 28 70 40 C70 60 50 70 50 70Z' fill='%23F6F8F7'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>14,000 Kids Worksheets — Ultimate Mega Bundle</title>
 <style>
-  /* ============ DESIGN TOKENS ============ */
   :root{
-    --teal-900:#0A4A43;
-    --teal-700:#0E6E63;
-    --teal-600:#128577;
-    --teal-100:#E3F1EE;
-    --teal-50:#F0F7F6;
-    --bg:#F6F8F7;
-    --surface:#FFFFFF;
-    --ink:#1C2B29;
-    --ink-soft:#52635F;
-    --ink-faint:#84948F;
-    --line:#DCE6E3;
-    --coral:#E1553F;
-    --coral-dark:#C6432F;
-    --amber:#F0A93E;
-    --green:#2E9E63;
-    --green-bg:#E9F7EF;
-    --radius-sm:10px;
-    --radius-md:16px;
-    --radius-lg:26px;
-    --shadow-sm:0 2px 10px rgba(15,50,45,0.06);
-    --shadow-md:0 10px 30px rgba(15,50,45,0.10);
-    --font-display:'Baloo 2', system-ui, sans-serif;
-    --font-body:'Inter', system-ui, sans-serif;
-    --wrap:660px;
+    --navy:#181d34;
+    --navy-light:#232a4a;
+    --red:#e31c4d;
+    --red-dark:#c8123e;
+    --gold:#f5b93d;
+    --green:#8fd13f;
+    --cream:#f4f1ea;
+    --ink:#1a1a1a;
+    --gray:#6b7280;
   }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  *{box-sizing:border-box;margin:0;padding:0;}
   body{
-    font-family:var(--font-body);
-    background:var(--bg);
+    font-family:'Segoe UI',Arial,sans-serif;
     color:var(--ink);
-    line-height:1.55;
+    background:#fff;
+    line-height:1.5;
     -webkit-font-smoothing:antialiased;
   }
   img{max-width:100%;display:block;}
-  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 18px;}
-  h1,h2,h3{font-family:var(--font-display);font-weight:700;color:var(--ink);letter-spacing:-0.01em;}
-  a{color:inherit;}
-  button{font-family:inherit;cursor:pointer;border:none;}
-  :focus-visible{outline:3px solid var(--amber);outline-offset:2px;}
+  a{text-decoration:none;}
+  .container{max-width:1000px;margin:0 auto;padding:0 20px;}
 
-  /* dotted tracing-line motif — used as the recurring signature device */
-  .trace-divider{
-    height:0;border-top:2.5px dashed var(--line);
-    margin:0;
+  /* Top offer bar */
+  .top-bar{
+    background:var(--red);
+    color:#fff;
+    text-align:center;
+    font-weight:700;
+    font-size:15px;
+    padding:10px 12px;
   }
-  .trace-divider.on-dark{border-top-color:rgba(255,255,255,0.18);}
+  .top-bar s{opacity:.75;font-weight:400;margin-right:6px;}
+  .top-bar span.new-price{color:var(--gold);}
 
-  /* ============ TOP BAR ============ */
-  .topbar{
-    background:var(--teal-900);color:#fff;
-    text-align:center;font-size:12.5px;font-weight:600;
-    padding:9px 14px;letter-spacing:0.01em;
-  }
-  .topbar span{color:var(--amber);}
-
-  /* ============ HERO ============ */
+  /* Hero */
   .hero{
-    background:linear-gradient(180deg, var(--teal-50) 0%, var(--bg) 100%);
-    padding:26px 0 30px;
+    background:var(--navy);
+    padding:36px 0 30px;
   }
-  .brandmark{display:flex;align-items:center;gap:8px;margin-bottom:18px;}
-  .brandmark svg{width:26px;height:26px;flex-shrink:0;}
-  .brandmark span{font-family:var(--font-display);font-weight:700;font-size:17px;color:var(--teal-900);}
-  .hero-grid{display:flex;flex-direction:column;gap:20px;}
-  .hero h1{font-size:29px;line-height:1.22;margin-bottom:10px;}
-  .hero h1 em{font-style:normal;color:var(--teal-700);}
-  .hero-sub{font-size:15px;color:var(--ink-soft);margin-bottom:18px;max-width:52ch;}
-  .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;}
-  .hero-badge{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-soft);font-weight:500;}
-  .hero-badge svg{width:15px;height:15px;color:var(--teal-700);flex-shrink:0;}
-  .hero-img-box{
-    background:var(--surface);border-radius:var(--radius-lg);
-    padding:20px;box-shadow:var(--shadow-md);
-    display:flex;align-items:center;justify-content:center;
-    border:1px solid var(--line);
+  .hero-headline{
+    background:var(--navy-light);
+    border:2px solid var(--gold);
+    border-radius:10px;
+    padding:20px 24px;
+    text-align:center;
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+    line-height:1.35;
+    margin-bottom:18px;
   }
-  .hero-img-box img{max-height:280px;width:auto;margin:0 auto;}
-  .price-row{
-    display:flex;align-items:center;gap:12px;
-    background:var(--green-bg);border-radius:var(--radius-md);
-    padding:14px 16px;margin-bottom:14px;
+  .hero-headline .hl{color:var(--gold);}
+  .hero-sub{
+    text-align:center;
+    color:#dcdfe8;
+    font-style:italic;
+    font-size:15px;
+    margin-bottom:24px;
   }
-  .price-old{font-size:14px;color:var(--ink-faint);text-decoration:line-through;}
-  .price-new{font-size:26px;font-weight:800;color:var(--green);font-family:var(--font-display);}
-  .price-tag{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--green);background:#fff;padding:4px 10px;border-radius:20px;}
-  .cta-btn{
-    display:block;width:100%;text-align:center;
-    background:var(--coral);color:#fff;
-    font-family:var(--font-display);font-weight:700;font-size:16px;
-    padding:16px;border-radius:var(--radius-md);
-    box-shadow:0 8px 20px rgba(225,85,63,0.35);
-    transition:transform .15s ease, box-shadow .15s ease;
+  .hero-main{
+    display:flex;
+    gap:28px;
+    align-items:center;
+    flex-wrap:wrap;
   }
-  .cta-btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(225,85,63,0.42);}
-  .cta-sub{text-align:center;font-size:12px;color:var(--ink-faint);margin-top:9px;}
-  @media (prefers-reduced-motion: no-preference){
-    .cta-btn.pulse{animation:pulse 2.4s ease-in-out infinite;}
+  .hero-main .product-shot{
+    flex:0 0 260px;
+    background:#fff;
+    border-radius:8px;
+    padding:14px;
   }
-  @keyframes pulse{
-    0%,100%{box-shadow:0 8px 20px rgba(225,85,63,0.35);}
-    50%{box-shadow:0 8px 26px rgba(225,85,63,0.55);}
+  .hero-main .features{
+    flex:1 1 320px;
+    min-width:260px;
+  }
+  .feature-item{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    color:#fff;
+    font-size:14.5px;
+    font-weight:600;
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+  }
+  .feature-item:before{content:"🔖";flex-shrink:0;}
+
+  /* Sticky-style limited offer bar */
+  .offer-strip{
+    background:#0d1024;
+    color:#fff;
+    padding:14px 0;
+  }
+  .offer-strip .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .offer-strip .label{color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;}
+  .timer{display:flex;gap:6px;}
+  .timer .t-box{
+    background:#1c2140;
+    border:1px solid var(--gold);
+    border-radius:4px;
+    padding:6px 10px;
+    text-align:center;
+    min-width:44px;
+  }
+  .timer .t-box b{display:block;font-size:16px;}
+  .timer .t-box small{font-size:9px;color:#bbb;}
+  .offer-meta{display:flex;gap:16px;font-size:12px;color:#ddd;flex-wrap:wrap;}
+  .btn-buy{
+    background:var(--green);
+    color:#12210a;
+    font-weight:800;
+    padding:12px 28px;
+    border-radius:6px;
+    display:inline-block;
+    font-size:15px;
   }
 
-  /* ============ COUNTDOWN STRIP ============ */
-  .countdown-strip{
-    background:var(--ink);color:#fff;
-    padding:12px 0;
+  .center-cta{text-align:center;padding:34px 0;}
+  .center-cta .lead{font-size:18px;font-weight:600;margin-bottom:4px;}
+  .center-cta .lead .hl{color:var(--gold);background:#1a1a1a;padding:0 4px;}
+  .btn-red{
+    display:inline-block;
+    background:var(--red);
+    color:#fff;
+    font-weight:800;
+    font-size:16px;
+    padding:16px 40px;
+    border-radius:6px;
+    margin-top:14px;
   }
-  .countdown-inner{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;}
-  .countdown-label{font-size:12px;color:var(--amber);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;}
-  .countdown-clock{display:flex;gap:6px;}
-  .countdown-clock div{
-    background:rgba(255,255,255,0.08);border-radius:8px;
-    padding:5px 9px;font-family:var(--font-display);font-weight:700;font-size:15px;
-    min-width:38px;text-align:center;
-  }
-  .countdown-clock span{display:block;font-size:8px;font-weight:400;color:var(--ink-faint);text-transform:uppercase;margin-top:1px;}
+  .btn-red small{display:block;font-weight:500;font-size:12px;margin-top:2px;}
+  .social-proof{color:var(--gold);font-weight:700;margin-top:14px;font-size:14px;}
+  .delivery-meta{color:var(--gray);font-size:12px;margin-top:10px;}
 
-  /* ============ GENERIC SECTION ============ */
-  section{padding:38px 0;}
-  .eyebrow{
-    font-size:12px;font-weight:700;color:var(--teal-700);
-    text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;
-    display:block;
+  section{padding:44px 0;}
+  .section-dark{background:var(--navy);color:#fff;}
+  .section-cream{background:var(--cream);}
+  h2.section-title{
+    text-align:center;
+    font-size:26px;
+    font-weight:800;
+    margin-bottom:26px;
   }
-  .section-title{font-size:23px;margin-bottom:10px;}
-  .section-sub{font-size:14.5px;color:var(--ink-soft);margin-bottom:22px;max-width:56ch;}
-  .section-dark{background:var(--teal-900);color:#fff;}
-  .section-dark .section-title{color:#fff;}
-  .section-dark .eyebrow{color:var(--amber);}
-  .section-alt{background:var(--surface);}
+  h2.section-title span{color:var(--gold);}
 
-  /* ============ PROBLEM LIST ============ */
-  .problem-list{display:flex;flex-direction:column;gap:12px;}
-  .problem-item{
-    display:flex;gap:12px;align-items:flex-start;
-    background:var(--surface);border:1px solid var(--line);
-    border-radius:var(--radius-sm);padding:13px 15px;
+  .cards-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
   }
-  .problem-item svg{width:19px;height:19px;color:var(--coral);flex-shrink:0;margin-top:2px;}
-  .problem-item p{font-size:14px;color:var(--ink);}
-
-  /* ============ BENEFIT CARDS ============ */
-  .card-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .benefit-card{
-    background:var(--surface);border:1px solid var(--line);
-    border-radius:var(--radius-md);padding:16px;
+  .card{
+    background:#fff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
   }
-  .benefit-card svg{width:24px;height:24px;color:var(--teal-700);margin-bottom:10px;}
-  .benefit-card h3{font-size:14.5px;margin-bottom:5px;font-family:var(--font-body);font-weight:700;}
-  .benefit-card p{font-size:12.5px;color:var(--ink-soft);line-height:1.5;}
+  .card h3{font-size:15px;margin-bottom:8px;display:flex;gap:8px;align-items:center;}
+  .card p{font-size:13.5px;color:var(--gray);}
 
-  /* ============ AWARENESS STRIPS ============ */
-  .aware-strip{
-    display:flex;align-items:center;gap:10px;
-    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);
-    border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:9px;
+  .risk-list{display:flex;flex-direction:column;gap:2px;margin-top:22px;}
+  .risk-item{
+    background:linear-gradient(90deg,#1c3a5a,#2f8fb0);
+    color:#fff;
+    padding:14px 18px;
+    font-size:14px;
   }
-  .aware-strip svg{width:18px;height:18px;color:var(--amber);flex-shrink:0;}
-  .aware-strip p{font-size:13px;color:rgba(255,255,255,0.88);}
-  .aware-strip b{color:#fff;}
+  .risk-item b{margin-right:6px;}
 
-  /* ============ CATEGORY GRID ============ */
-  .cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px;}
+  .tagline{
+    text-align:center;
+    font-size:15px;
+    font-weight:600;
+    margin:30px auto;
+    max-width:700px;
+  }
+
+  /* Category grid */
+  .category-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+  }
   .cat-card{
-    background:var(--surface);border-radius:var(--radius-md);
-    overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);
+    background:#232a4a;
+    border-radius:8px;
+    overflow:hidden;
+    text-align:center;
   }
-  .cat-card .cat-img{
-    aspect-ratio:4/3;background:var(--teal-50);
-    display:flex;align-items:center;justify-content:center;overflow:hidden;
-    padding:10px;
+  .cat-card img{width:100%;height:170px;object-fit:cover;background:#fff;}
+  .cat-card span{display:block;padding:10px 6px;font-size:13px;font-weight:600;}
+
+  /* Generic slider */
+  .slider{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
   }
-  .cat-card .cat-img img{width:100%;height:100%;object-fit:contain;}
-  .cat-card .cat-label{
-    padding:9px 10px;font-size:12.5px;font-weight:700;
-    text-align:center;background:var(--teal-900);color:#fff;
+  .slider-track{
+    display:flex;
+    transition:transform .4s ease;
   }
-  .cat-more{
-    text-align:center;font-size:13.5px;font-weight:600;color:var(--teal-700);
-    background:var(--teal-100);border-radius:var(--radius-sm);padding:11px;
+  .slider-track .slide{
+    flex:0 0 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:6px;
+  }
+  .slider-track .slide img{
+    max-height:380px;
+    width:auto;
+    margin:0 auto;
+    border-radius:8px;
+  }
+  .slider-nav{
+    position:absolute;top:50%;transform:translateY(-50%);
+    background:rgba(0,0,0,.45);color:#fff;border:none;
+    width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .slider-nav.prev{left:8px;}
+  .slider-nav.next{right:8px;}
+  .slider-dots{display:flex;justify-content:center;gap:6px;margin-top:12px;}
+  .slider-dots .dot{
+    width:8px;height:8px;border-radius:50%;background:#ccc;cursor:pointer;border:none;
+  }
+  .slider-dots .dot.active{background:var(--red);}
+
+  /* multi-item slider (3 visible) */
+  .multi-slider .slider-track .slide{
+    flex:0 0 33.333%;
+    padding:8px;
+  }
+  .multi-slider .slider-track .slide img{max-height:260px;}
+  @media (max-width:700px){
+    .multi-slider .slider-track .slide{flex:0 0 100%;}
   }
 
-  /* ============ CHECKLIST ============ */
-  .check-list{display:flex;flex-direction:column;gap:9px;}
-  .check-item{
-    display:flex;align-items:center;gap:10px;
-    background:var(--surface);border:1.5px solid var(--green);
-    border-radius:var(--radius-sm);padding:11px 13px;
+  .whatsapp-slider .slide img{max-height:420px;border-radius:14px;}
+
+  /* checklist */
+  .checklist{display:flex;flex-direction:column;gap:10px;max-width:640px;margin:0 auto;}
+  .checklist .item{
+    border:2px solid var(--green);
+    border-radius:8px;
+    padding:12px 16px;
+    font-size:14.5px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
   }
-  .check-item svg{width:17px;height:17px;color:var(--green);flex-shrink:0;}
-  .check-item p{font-size:13.5px;font-weight:500;}
+  .checklist .item:before{content:"✅";}
 
-  /* ============ CAROUSELS (scroll-snap) ============ */
-  .carousel{
-    display:flex;gap:12px;overflow-x:auto;
-    scroll-snap-type:x mandatory;padding:4px 18px 14px;
-    margin:0 -18px;-webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
+  .price-row{text-align:center;margin:26px 0;}
+  .price-row .old{color:var(--gray);text-decoration:line-through;font-size:16px;}
+  .price-row .new{color:#2e8b2e;font-size:26px;font-weight:800;display:block;margin:4px 0 16px;}
+
+  /* testimonial text cards */
+  .testi-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:16px;
   }
-  .carousel::-webkit-scrollbar{display:none;}
-  .carousel-card{scroll-snap-align:start;flex-shrink:0;}
-
-  .sample-card{width:150px;}
-  .sample-card .frame{
-    background:var(--surface);border-radius:var(--radius-sm);
-    padding:8px;border:1px solid var(--line);box-shadow:var(--shadow-sm);
-    aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;overflow:hidden;
-  }
-  .sample-card .frame img{width:100%;height:100%;object-fit:cover;border-radius:6px;}
-
-  .highlight-card{width:240px;}
-  .highlight-card .frame{
-    background:var(--surface);border-radius:var(--radius-md);
-    padding:10px;border:1px solid var(--line);box-shadow:var(--shadow-md);
-    aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;overflow:hidden;
-  }
-  .highlight-card .frame img{width:100%;height:100%;object-fit:cover;border-radius:10px;}
-
-  .wa-card{width:210px;}
-  .wa-card .frame{
-    background:#0B141A;border-radius:18px;padding:6px;
-    box-shadow:var(--shadow-md);
-  }
-  .wa-card .frame img{border-radius:14px;width:100%;}
-
-  .scroll-hint{text-align:center;font-size:11.5px;color:var(--ink-faint);margin-top:2px;}
-  .scroll-hint.on-dark{color:rgba(255,255,255,0.5);}
-
-  /* ============ TESTIMONIALS ============ */
-  .testi-grid{display:flex;flex-direction:column;gap:12px;}
   .testi-card{
-    background:var(--surface);border:1px solid var(--line);
-    border-radius:var(--radius-md);padding:16px;
+    background:#fff;
+    border-radius:8px;
+    padding:18px;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+    font-size:13px;
   }
-  .testi-stars{color:var(--amber);font-size:13px;margin-bottom:8px;letter-spacing:2px;}
-  .testi-card p.quote{font-size:13.5px;color:var(--ink);line-height:1.6;margin-bottom:10px;}
-  .testi-name{font-size:12.5px;font-weight:700;}
-  .testi-loc{font-size:11.5px;color:var(--ink-faint);}
+  .testi-card .name{font-weight:700;font-size:14px;margin-top:8px;}
+  .testi-card .loc{color:var(--gray);font-size:12px;margin-bottom:8px;}
 
-  /* ============ STEPS ============ */
-  .steps-row{display:flex;flex-direction:column;gap:14px;}
-  .step-item{display:flex;gap:14px;align-items:flex-start;}
-  .step-num{
-    width:34px;height:34px;border-radius:50%;background:var(--teal-700);
-    color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;
-    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  /* steps */
+  .steps{display:flex;flex-direction:column;gap:16px;max-width:600px;margin:0 auto;}
+  .step{display:flex;gap:14px;align-items:flex-start;}
+  .step .num{
+    background:var(--navy);color:#fff;width:32px;height:32px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;
   }
-  .step-item h3{font-size:14.5px;margin-bottom:3px;font-family:var(--font-body);font-weight:700;}
-  .step-item p{font-size:12.5px;color:var(--ink-soft);}
+  .step h4{font-size:15px;margin-bottom:2px;}
+  .step p{font-size:13px;color:var(--gray);}
 
-  /* ============ NEEDS ROW ============ */
-  .needs-box{
-    display:flex;gap:16px;align-items:center;
-    background:var(--surface);border-radius:var(--radius-md);
-    padding:16px;border:1px solid var(--line);margin-bottom:18px;
+  .req-list{max-width:500px;margin:20px auto 0;display:flex;flex-direction:column;gap:8px;}
+  .req-list .item{
+    background:var(--navy);color:#fff;border-radius:6px;padding:10px 16px;font-weight:600;font-size:14px;
   }
-  .needs-box img{width:88px;height:88px;object-fit:contain;flex-shrink:0;}
-  .needs-list{display:flex;flex-direction:column;gap:8px;}
-  .needs-list .check-item{border:none;background:var(--teal-50);padding:8px 11px;}
 
-  /* ============ TRUST BADGES ============ */
-  .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-  .trust-item{text-align:center;padding:14px 8px;}
-  .trust-item svg{width:26px;height:26px;color:var(--teal-700);margin:0 auto 8px;}
-  .trust-item p{font-size:11.5px;font-weight:600;color:var(--ink-soft);}
+  .progress-wrap{max-width:600px;margin:30px auto 0;}
+  .progress-row{margin-bottom:18px;}
+  .progress-row .label{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;font-weight:600;}
+  .progress-bar{background:#e3e6ee;border-radius:20px;height:10px;overflow:hidden;}
+  .progress-bar .fill{background:var(--red);height:100%;border-radius:20px;}
 
-  /* ============ CHOICE (A/B) ============ */
-  .choice-title{text-align:center;font-size:21px;margin-bottom:18px;}
-  .choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-  .choice-card{
-    border:2px dashed var(--line);border-radius:var(--radius-md);
-    padding:10px;background:var(--surface);
-  }
-  .choice-card.b{border-color:var(--teal-600);background:var(--teal-50);}
-  .choice-card .label{font-size:12px;font-weight:700;margin-bottom:8px;line-height:1.35;min-height:34px;}
-  .choice-card .label b{color:var(--coral);}
-  .choice-card.b .label b{color:var(--teal-700);}
-  .choice-card .cimg{aspect-ratio:1/1;border-radius:var(--radius-sm);overflow:hidden;}
-  .choice-card .cimg img{width:100%;height:100%;object-fit:cover;}
+  .bundle-flow{display:flex;gap:24px;align-items:center;flex-wrap:wrap;}
+  .bundle-flow .printer-img{flex:0 0 260px;border:3px solid var(--red);border-radius:8px;padding:10px;background:#fff;}
+  .bundle-flow .flow-items{flex:1 1 260px;display:flex;flex-direction:column;gap:16px;}
+  .flow-item h4{font-size:15px;}
+  .flow-item p{font-size:13px;color:#cfd3e0;}
 
-  /* ============ FAQ ============ */
-  .faq-item{
-    border-bottom:1px solid var(--line);padding:15px 2px;
-  }
-  .faq-item summary{
-    list-style:none;cursor:pointer;font-size:14px;font-weight:600;
-    display:flex;justify-content:space-between;align-items:center;gap:10px;
-  }
-  .faq-item summary::-webkit-details-marker{display:none;}
-  .faq-item summary .plus{
-    width:20px;height:20px;border-radius:50%;background:var(--teal-100);
-    color:var(--teal-700);display:flex;align-items:center;justify-content:center;
-    font-size:15px;flex-shrink:0;transition:transform .2s ease;
-  }
-  .faq-item[open] summary .plus{transform:rotate(45deg);}
-  .faq-item p.answer{font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.6;}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
+  .why-card{background:#fff;border-radius:8px;padding:18px;text-align:center;}
+  .why-card h4{font-size:14px;margin:8px 0 6px;}
+  .why-card p{font-size:12.5px;color:var(--gray);}
 
-  /* ============ GUARANTEE ============ */
+  .choice-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:600px;margin:24px auto 0;}
+  .choice-box{border:2px dashed var(--red);border-radius:8px;overflow:hidden;text-align:center;}
+  .choice-box img{width:100%;height:170px;object-fit:cover;}
+  .choice-box .cap{padding:8px;font-size:12.5px;font-weight:700;}
+  .choice-box.a .cap{color:var(--red);}
+  .choice-box.b .cap{color:#2e8b2e;}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid rgba(255,255,255,.15);}
+  .faq-q{
+    width:100%;background:none;border:none;color:#fff;text-align:left;
+    font-size:14.5px;font-weight:600;padding:16px 4px;cursor:pointer;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;font-size:13.5px;color:#d5d8e4;}
+  .faq-a p{padding:0 4px 16px;}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-q .icon{transition:transform .3s ease;}
+  .faq-item.open .faq-q .icon{transform:rotate(45deg);}
+
   .guarantee-box{
-    display:flex;gap:14px;align-items:center;
-    background:var(--surface);border:1.5px solid var(--teal-700);
-    border-radius:var(--radius-md);padding:16px;
+    max-width:700px;margin:0 auto;
+    border:1px solid #ddd;border-radius:8px;
+    display:flex;gap:16px;align-items:center;padding:20px;
   }
-  .guarantee-box svg{width:44px;height:44px;color:var(--teal-700);flex-shrink:0;}
-  .guarantee-box h3{font-size:14.5px;margin-bottom:4px;font-family:var(--font-body);font-weight:700;}
-  .guarantee-box p{font-size:12px;color:var(--ink-soft);line-height:1.5;}
+  .guarantee-box .shield{font-size:40px;}
+  .guarantee-box h4{font-size:15px;margin-bottom:6px;color:#2e8b2e;}
+  .guarantee-box p{font-size:12.5px;color:var(--gray);}
 
-  /* ============ FOOTER ============ */
-  footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:30px 0 22px;}
-  .footer-brand{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
-  .footer-brand svg{width:22px;height:22px;}
-  .footer-brand span{font-family:var(--font-display);font-weight:700;color:#fff;font-size:16px;}
-  footer p.tag{font-size:12.5px;margin-bottom:18px;color:rgba(255,255,255,0.55);}
-  .footer-links{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;margin-bottom:16px;}
-  .footer-links a{color:rgba(255,255,255,0.75);text-decoration:none;}
-  .footer-links a:hover{color:#fff;}
-  .footer-disclaimer{font-size:10.5px;color:rgba(255,255,255,0.35);line-height:1.6;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px;}
+  footer{background:#0d1024;color:#8a8fa3;text-align:center;padding:30px 0;font-size:12px;}
+  footer .links{display:flex;justify-content:center;gap:18px;margin:14px 0;flex-wrap:wrap;}
+  footer .links a{color:#c7cadd;}
+  footer .top-strip{
+    background:#0d1024;padding:16px 0;border-top:1px solid #262b45;border-bottom:1px solid #262b45;
+    display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:20px;
+  }
 
-  /* ============ DESKTOP ============ */
-  @media (min-width:760px){
-    .hero-grid{flex-direction:column;}
-    .hero h1{font-size:36px;}
-    .card-grid{grid-template-columns:repeat(4,1fr);}
-    .cat-grid{grid-template-columns:repeat(5,1fr);}
-    .choice-grid{max-width:520px;margin:0 auto;}
+  @media(max-width:700px){
+    .cards-grid, .why-grid, .category-grid, .testi-grid{grid-template-columns:1fr 1fr;}
+    .category-grid{grid-template-columns:1fr 1fr;}
+    .hero-headline{font-size:18px;}
+  }
+  @media(max-width:480px){
+    .cards-grid, .testi-grid, .why-grid, .choice-row{grid-template-columns:1fr;}
+    .category-grid{grid-template-columns:1fr 1fr;}
   }
 </style>
 </head>
 <body>
 
-<!-- Assumes all image files sit in a single "" folder next to this HTML file.
-     If your repo uses subfolders (e.g. samples/, whatsapp/), do a
-     find-and-replace on the folder prefixes below before publishing. -->
+<!-- TOP OFFER BAR -->
+<div class="top-bar">
+  Offer Valid Only For Today <s>₹1999/-</s> <span class="new-price">₹199/- Only</span>
+</div>
 
-<!-- ============ TOP BAR ============ -->
-<div class="topbar">📦 Instant download after payment — no waiting</div>
-
-<!-- ============ HERO ============ -->
-<header class="hero">
-  <div class="wrap">
-    <div class="brandmark">
-      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" fill="#0E6E63"/><path d="M50 70 C50 70 30 60 30 40 C30 28 40 24 50 32 C60 24 70 28 70 40 C70 60 50 70 50 70Z" fill="#F6F8F7"/></svg>
-      <span>Growvio</span>
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <div class="hero-headline">
+      <span class="hl">Turn Screen Time Into a Fun Learning Time</span> with our 14,000+ Printable Worksheets Designed to Captivate Your <span class="hl">Child's Interest</span> and Boost their <span class="hl">Early Development!</span>
     </div>
+    <p class="hero-sub">Minimize screen time and involve your child in stimulating worksheets.</p>
 
-    <div class="hero-grid">
-      <div>
-        <h1>Busy Hands, <em>Less Screen Time</em></h1>
-        <p class="hero-sub">10,000+ printable worksheets for ages 2–7 — tracing, alphabets, numbers, puzzles and more. Print once, hand it over anytime.</p>
-        <div class="hero-badges">
-          <div class="hero-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
-            Instant download
-          </div>
-          <div class="hero-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="16" height="14" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
-            Print anytime, at home
-          </div>
-        </div>
+    <div class="hero-main">
+      <div class="product-shot">
+        <img src="productbox.png" alt="14000 Kids Worksheets Ultimate Mega Bundle">
       </div>
-
-      <div class="hero-img-box">
-        <img src="productbox.png" alt="Growvio 10,000+ Kids Worksheets bundle" loading="eager">
+      <div class="features">
+        <div class="feature-item">14,000 Printable Worksheet PDF – A Smarter, Fun Way to Help Your Kids Learn!</div>
+        <div class="feature-item">Screen-Free Activities to Help Your Child Build Essential Skills While Having Fun!</div>
+        <div class="feature-item">Over 2.5 Years of Research to Bring You Engaging, High-Quality Learning Worksheets!</div>
+        <div class="feature-item">Engaging Handwriting Practice Sheets for Clear &amp; Confident Writing!</div>
       </div>
-
-      <div>
-        <div class="price-row">
-          <div>
-            <div class="price-old">₹1999</div>
-            <div class="price-new">₹199</div>
-          </div>
-          <div class="price-tag">90% OFF today</div>
-        </div>
-        <a class="cta-btn pulse" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now</a>
-        <p class="cta-sub">142 parents grabbed this in the last 24 hours</p>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- ============ COUNTDOWN ============ -->
-<div class="countdown-strip">
-  <div class="wrap countdown-inner">
-    <span class="countdown-label">Offer ends in</span>
-    <div class="countdown-clock" id="countdown">
-      <div><span id="cd-h">02</span><span>hrs</span></div>
-      <div><span id="cd-m">45</span><span>min</span></div>
-      <div><span id="cd-s">00</span><span>sec</span></div>
     </div>
   </div>
 </div>
 
-<!-- ============ SOUND FAMILIAR (PROBLEM) ============ -->
+<!-- OFFER STRIP with countdown -->
+<div class="offer-strip">
+  <div class="container">
+    <div>
+      <div class="label">Limited Time Offer</div>
+      <div class="timer" id="timer1">
+        <div class="t-box"><b id="t1-h">02</b><small>Hours</small></div>
+        <div class="t-box"><b id="t1-m">00</b><small>Minutes</small></div>
+        <div class="t-box"><b id="t1-s">00</b><small>Seconds</small></div>
+      </div>
+    </div>
+    <div class="offer-meta">
+      <span>📖 14,000 Kids Worksheets</span>
+      <span>👥 Team of Experts</span>
+      <span>⭐ Years Of Experience</span>
+    </div>
+    <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-buy">BUY NOW</a>
+  </div>
+</div>
+
+<!-- AGE APPROPRIATE CTA -->
+<div class="container center-cta">
+  <p class="lead">Age-appropriate exercises and tasks that promote holistic development in children <span class="hl">aged 2 to 7 years.</span></p>
+  <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
+  <p class="social-proof">In demand. 157 people bought this in the last 24 hours.</p>
+  <p class="delivery-meta">⬇ Digital download &nbsp; | &nbsp; 📁 Digital file type(s): 1 PDF, 5 ZIP</p>
+</div>
+
+<!-- WHAT YOU'LL GIVE YOUR CHILD -->
+<section class="section-cream">
+  <div class="container">
+    <h2 class="section-title">HERE IS WHAT YOU ARE GOING TO GIVE YOUR CHILD</h2>
+    <div class="cards-grid">
+      <div class="card"><h3>🖨️ Transform Screen Time into Learning Time</h3><p>Say goodbye to passive entertainment; our worksheets turn screen time into an enriching learning experience for your child.</p></div>
+      <div class="card"><h3>🖨️ Preparation for School Success</h3><p>Ensure your child enters formal education confidently, equipped with a solid understanding of fundamental concepts and a positive attitude towards learning.</p></div>
+      <div class="card"><h3>🖨️ Master Fundamental Skills for Lifelong Learning</h3><p>Equip your child with essential skills like alphabet recognition, counting, and shapes, laying a robust educational foundation for future success.</p></div>
+      <div class="card"><h3>🖨️ Independent Learning</h3><p>Activity worksheets encourage independent learning as children can work on them individually, promoting self-reliance, critical thinking, and decision-making.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:26px;">
+      <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- DO YOU KNOW -->
 <section>
-  <div class="wrap">
-    <span class="eyebrow">Sound familiar?</span>
-    <h2 class="section-title">Every parent runs into this</h2>
-    <div class="problem-list">
-      <div class="problem-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
-        <p>The phone is the one thing that keeps them still for 10 minutes</p>
-      </div>
-      <div class="problem-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <p>Attention span feels shorter every month</p>
-      </div>
-      <div class="problem-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/></svg>
-        <p>Free videos keep them busy — but they're not really learning anything</p>
-      </div>
-      <div class="problem-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <p>Not quite "school age" yet, so nothing structured is made for them</p>
-      </div>
+  <div class="container">
+    <h2 class="section-title">DO YOU KNOW?</h2>
+    <p style="text-align:center;color:var(--gray);margin-bottom:6px;">Mobile Phone Addiction Can Have Many Negative Effects On Children, Including:</p>
+    <div class="risk-list">
+      <div class="risk-item"><b>🧠 Mental health:</b> Depression, anxiety, OCD, attention deficit disorder (ADD), and other psychological disorders</div>
+      <div class="risk-item"><b>📉 Academic performance:</b> Poor grades and lower self-esteem.</div>
+      <div class="risk-item"><b>😴 Sleep:</b> Reduced sleep quality and sleep disturbances.</div>
+      <div class="risk-item"><b>👥 Social skills:</b> Impaired social skills and slower social development.</div>
+      <div class="risk-item"><b>🎭 Behavioral problems:</b> Compulsive behaviors, hyperactivity, conduct problems, and emotional symptoms.</div>
+      <div class="risk-item"><b>💪 Physical health:</b> Eye strain, headaches, neck pain, back pain, and obesity.</div>
+    </div>
+    <p class="tagline">We Help Parents Empower Their Kids with Expertly Designed Worksheets Covering Every Topic and Segment. We Believe in <b>Play, Practice, and Perform</b> – Unlocking Your Child's True Potential.</p>
+    <div style="text-align:center;">
+      <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
+      <p style="font-size:11px;color:var(--red);border:1px dashed var(--red);display:inline-block;padding:6px 12px;margin-top:14px;border-radius:4px;">NOTE: All worksheets are in soft copy format, and you will receive them instantly via email.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ BENEFITS ============ -->
-<section class="section-alt">
-  <div class="wrap">
-    <span class="eyebrow">The simple fix</span>
-    <h2 class="section-title">What you're giving your child</h2>
-    <div class="card-grid">
-      <div class="benefit-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
-        <h3>Screen time → learning time</h3>
-        <p>A hands-on alternative that's just as easy to hand over as a phone</p>
-      </div>
-      <div class="benefit-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.42A12 12 0 0112 21a12 12 0 01-6.16-10.42L12 14z"/></svg>
-        <h3>Gets school-ready</h3>
-        <p>Alphabet, number and pencil-grip practice before school starts</p>
-      </div>
-      <div class="benefit-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2L12 16.4 5.7 21l2.3-7.2-6-4.6h7.6z"/></svg>
-        <h3>Builds real fundamentals</h3>
-        <p>Shapes, counting and letters — the basics every child needs early on</p>
-      </div>
-      <div class="benefit-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
-        <h3>Learns to sit & finish</h3>
-        <p>Short, achievable activities that build focus a little at a time</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ AWARENESS ============ -->
+<!-- INSIDE THE BUNDLE -->
 <section class="section-dark">
-  <div class="wrap">
-    <span class="eyebrow">Worth thinking about</span>
-    <h2 class="section-title">Why parents are cutting down screen time</h2>
-    <p class="section-sub" style="color:rgba(255,255,255,0.75);">Paediatricians and parenting researchers commonly flag a few patterns with heavy early screen use:</p>
-    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg><p><b>Attention & mood</b> — more restlessness once the screen goes off</p></div>
-    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><p><b>Early learning</b> — passive watching vs. active, hands-on practice</p></div>
-    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 00-6 6c0 4 3 5 3 8h6c0-3 3-4 3-8a6 6 0 00-6-6z"/><path d="M10 21h4"/></svg><p><b>Sleep</b> — screen exposure close to bedtime affects wind-down</p></div>
-    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="3"/><path d="M2 21v-1a5 5 0 015-5h1a5 5 0 015 5v1"/><circle cx="17" cy="7" r="3"/></svg><p><b>Social play</b> — fewer chances to practise sharing, turn-taking, focus</p></div>
-  </div>
-</section>
-
-<!-- ============ WHAT'S INSIDE — CATEGORY GRID ============ -->
-<section class="section-alt">
-  <div class="wrap">
-    <span class="eyebrow">Inside the bundle</span>
-    <h2 class="section-title">What your child will discover</h2>
-    <p class="section-sub">A quick look at a few of the categories inside:</p>
-    <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-img"><img src="sample-alphabet1.webp" alt="Alphabet tracing worksheet sample" loading="lazy"></div>
-        <div class="cat-label">Alphabet Adventures</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-img"><img src="sample-numbers1.png" alt="Number practice worksheet sample" loading="lazy"></div>
-        <div class="cat-label">Number Practice</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-img"><img src="sample-counting1.webp" alt="Counting worksheet sample" loading="lazy"></div>
-        <div class="cat-label">Count & Write</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-img"><img src="sample-matchingbabies1.webp" alt="Match the animal babies worksheet sample" loading="lazy"></div>
-        <div class="cat-label">Match the Babies</div>
-      </div>
-      <div class="cat-card" style="grid-column:span 2;">
-        <div class="cat-img" style="aspect-ratio:8/3;"><img src="sample-mazegame1.png" alt="Maze game worksheet sample" loading="lazy"></div>
-        <div class="cat-label">Maze Games</div>
-      </div>
+  <div class="container">
+    <h2 class="section-title">Inside this Kids Worksheet Bundle you will discover</h2>
+    <div class="category-grid">
+      <div class="cat-card"><img src="sample-alphabet1.webp" alt="Alphabet Adventure"><span>Alphabet Adventure</span></div>
+      <div class="cat-card"><img src="sample-matchingbabies1.webp" alt="Match the Babies"><span>Match the Babies</span></div>
+      <div class="cat-card"><img src="sample-counting1.webp" alt="Count and Write"><span>Count and Write</span></div>
+      <div class="cat-card"><img src="sample-mazegame1.png" alt="Maze Game"><span>Maze Game</span></div>
+      <div class="cat-card"><img src="sample-numbers1.png" alt="Learn Number"><span>Learn Number</span></div>
+      <div class="cat-card"><img src="samples1.png" alt="Sight Word"><span>Sight Word</span></div>
+      <div class="cat-card"><img src="samples2.png" alt="Count & Circle"><span>Count &amp; Circle</span></div>
+      <div class="cat-card"><img src="samples3.png" alt="Read & Learn Words"><span>Read &amp; Learn Words</span></div>
     </div>
-    <div class="cat-more">+ hundreds more worksheets across 10+ categories</div>
-  </div>
-</section>
-
-<!-- ============ CTA BREAK ============ -->
-<section style="padding:26px 0;">
-  <div class="wrap">
-    <a class="cta-btn" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now — ₹199</a>
-  </div>
-</section>
-
-<!-- ============ DETAILED CHECKLIST ============ -->
-<section class="section-alt">
-  <div class="wrap">
-    <span class="eyebrow">Everything you get</span>
-    <h2 class="section-title">Unlock your child's bright future today</h2>
-    <div class="check-list">
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>1200+ Pages — Alphabets & Numbers</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>2500+ Colouring & Drawing Worksheets</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>350+ Hindi Worksheets</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>300+ Number & Counting Worksheets</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>800+ Cut & Glue Activities</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>250+ Word Search & Puzzles</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Maze Games & Logic Activities</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Handwriting Practice Sheets</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Bonus: Parenting & Nutrition eBooks</p></div>
-      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Lifetime access — print again anytime</p></div>
+    <p style="text-align:center;color:var(--green);font-weight:700;margin:26px 0;">And Many More!... Discover the joy of Learning Through Playful Kids Worksheets!</p>
+    <div style="text-align:center;">
+      <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
     </div>
-    <p style="text-align:center;font-size:13px;color:var(--ink-faint);margin-top:14px;">Regular price ₹1999 — today just ₹199</p>
   </div>
 </section>
 
-<!-- ============ WHATSAPP PROOF ============ -->
+<!-- WHATSAPP FEEDBACK SLIDER -->
 <section class="section-dark">
-  <div class="wrap">
-    <span class="eyebrow">Real feedback</span>
-    <h2 class="section-title">Shared by parents on WhatsApp</h2>
-  </div>
-  <div class="carousel">
-    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic1.jpeg" alt="Parent WhatsApp feedback screenshot 1" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic2.jpeg" alt="Parent WhatsApp feedback screenshot 2" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic3.jpeg" alt="Parent WhatsApp feedback screenshot 3" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic4.jpeg" alt="Parent WhatsApp feedback screenshot 4" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic5.jpeg" alt="Parent WhatsApp feedback screenshot 5" loading="lazy"></div></div>
-  </div>
-  <p class="scroll-hint on-dark">← swipe to see more →</p>
-</section>
-
-<!-- ============ SAMPLES SHOWCASE ============ -->
-<section class="section-alt">
-  <div class="wrap">
-    <span class="eyebrow">See for yourself</span>
-    <h2 class="section-title">Here are the samples</h2>
-  </div>
-  <div class="carousel">
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples1.png" alt="Worksheet sample 1" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples2.png" alt="Worksheet sample 2" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples3.png" alt="Worksheet sample 3" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples4.webp" alt="Worksheet sample 4" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples5.webp" alt="Worksheet sample 5" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples6.webp" alt="Worksheet sample 6" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples7.webp" alt="Worksheet sample 7" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples8.png" alt="Worksheet sample 8" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples9.webp" alt="Worksheet sample 9" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples10.png" alt="Worksheet sample 10" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="samples11.png" alt="Worksheet sample 11" loading="lazy"></div></div>
-  </div>
-  <p class="scroll-hint">← swipe to see more →</p>
-  <div class="wrap" style="margin-top:20px;">
-    <a class="cta-btn" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now — ₹199</a>
+  <div class="container">
+    <h2 class="section-title">Join 94,000+ Happy Parents <span>Supercharging Their Child's Learning</span><br><span style="font-size:15px;font-weight:400;">Loved, Trusted &amp; Shared on WhatsApp 💚</span></h2>
+    <div class="slider whatsapp-slider multi-slider" id="waSlider" style="max-width:800px;margin:0 auto;">
+      <div class="slider-track" id="waTrack">
+        <div class="slide"><img src="whatsappfeedbackpic1.jpeg" alt="Parent feedback"></div>
+        <div class="slide"><img src="whatsappfeedbackpic2.jpeg" alt="Parent feedback"></div>
+        <div class="slide"><img src="whatsappfeedbackpic3.jpeg" alt="Parent feedback"></div>
+        <div class="slide"><img src="whatsappfeedbackpic4.jpeg" alt="Parent feedback"></div>
+        <div class="slide"><img src="whatsappfeedbackpic5.jpeg" alt="Parent feedback"></div>
+      </div>
+      <button class="slider-nav prev" onclick="moveSlider('waTrack',-1,5,1)">&#10094;</button>
+      <button class="slider-nav next" onclick="moveSlider('waTrack',1,5,1)">&#10095;</button>
+    </div>
+    <div class="slider-dots" id="waDots"></div>
   </div>
 </section>
 
-<!-- ============ TESTIMONIALS ============ -->
+<!-- UNLOCK CHECKLIST -->
+<section class="section-cream">
+  <div class="container">
+    <h2 class="section-title">UNLOCK YOUR CHILD'S BRIGHT FUTURE TODAY!</h2>
+    <div class="checklist">
+      <div class="item">40+ Essential Skills With Precise Tracking At Best Price For A Limited Time Only.</div>
+      <div class="item">Handwriting Practice Sheets</div>
+      <div class="item">3000+ Colouring And Drawing Worksheet</div>
+      <div class="item">1300+ Pages Worksheet For English Alphabet &amp; Numbers</div>
+      <div class="item">350+ Page Hindi Master Worksheet</div>
+      <div class="item">300+ Number And Counting Worksheet</div>
+      <div class="item">1000+ Cut And Glue Worksheet</div>
+      <div class="item">300+ Word Search Worksheet</div>
+      <div class="item">Amazing FREE BONUS</div>
+      <div class="item">How To Raise An Amazing Child – The Montessori Way</div>
+      <div class="item">Bed Time Stories (Hindi &amp; English)</div>
+      <div class="item">100+ eBooks For Parenting &amp; Kids Nutrition</div>
+      <div class="item">Receive Regular Updates To Your Worksheets Via Email</div>
+    </div>
+    <div class="price-row">
+      <span class="old">Regular Price: ₹1999</span>
+      <span class="new">BUY TODAY AT JUST ₹199/-</span>
+      <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLES SLIDER -->
+<section class="section-dark">
+  <div class="container">
+    <h2 class="section-title">Here Are The Samples</h2>
+    <div class="slider multi-slider" id="sampleSlider" style="max-width:900px;margin:0 auto;">
+      <div class="slider-track" id="sampleTrack">
+        <div class="slide"><img src="samples1.png" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples2.png" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples3.png" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples4.webp" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples5.webp" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples6.webp" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples7.webp" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples8.png" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples9.webp" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples10.png" alt="sample worksheet"></div>
+        <div class="slide"><img src="samples11.png" alt="sample worksheet"></div>
+      </div>
+      <button class="slider-nav prev" onclick="moveSlider('sampleTrack',-1,11,3)">&#10094;</button>
+      <button class="slider-nav next" onclick="moveSlider('sampleTrack',1,11,3)">&#10095;</button>
+    </div>
+    <div class="slider-dots" id="sampleDots"></div>
+    <div style="text-align:center;margin-top:26px;">
+      <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- TEXT TESTIMONIALS -->
 <section>
-  <div class="wrap">
-    <span class="eyebrow">Parents are loving it</span>
-    <h2 class="section-title">Real stories, real results</h2>
-    <!-- Replace the 6 cards below with your real collected testimonials —
-         each block is marked so you can find/replace quickly. -->
+  <div class="container">
+    <h2 class="section-title">What Parents Are Loving <span style="color:var(--red);">Real Stories, Real Results!</span></h2>
     <div class="testi-grid">
-      <div class="testi-card"><!-- TESTIMONIAL 1 -->
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">"[Replace with testimonial 1 text]"</p>
-        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      <div class="testi-card">"Earlier, keeping my twins busy without a phone was impossible. Now they actually fight over who gets to do the coloring pages first! The variety keeps them excited — tracing, puzzles, stories — they love it all. Honestly, this bundle has been the easiest parenting win for me this year. Totally worth it!"<div class="name">Priya M., Bangalore</div><div class="loc">Mom of Twin 5-Year-Olds</div></div>
+      <div class="testi-card">"I'm a preschool teacher, and these worksheets have saved me hours of prep time. The flashcards, tracing sheets, and cut-and-glue activities are my students' absolute favourites! I love that I can print them again and again — it's affordable, practical, and keeps my classroom buzzing with excitement every day."<div class="name">Shalini V., Pune</div><div class="loc">Preschool Teacher (8+ Years Experience)</div></div>
+      <div class="testi-card">"At first, I bought it just for my daughter's handwriting practice, but we ended up using everything — bedtime stories, puzzles, even the early science sheets. It's like having a whole library of fun learning at home. Crevvo really nailed it for parents who want smart, screen-free activities for their kids."<div class="name">Rohit S., Delhi</div><div class="loc">Dad of a 5-Year-Old</div></div>
+      <div class="testi-card">"It's rare to find something that works for both my 3-year-old and my 6-year-old. This bundle has age-wise activities that keep both of them happy — one does tracing while the other solves puzzles. I no longer have to hunt online for new ideas every day. Everything we need is right here!"<div class="name">Nikita K., Mumbai</div><div class="loc">Mom of a 3-Year-Old &amp; 6-Year-Old</div></div>
+      <div class="testi-card">"We travel a lot, so carrying books isn't practical. With this, I just print a small folder before every trip — my son colors, solves puzzles, and stays entertained the whole way. He actually looks forward to plane rides now! I can't recommend Crevvo enough for traveling parents."<div class="name">Anita R., Hyderabad</div><div class="loc">Frequent Traveller &amp; Mom of a 4-Year-Old</div></div>
+      <div class="testi-card">"Pehele mera beta padhai ke naam se bhaagta tha, par Crevvo ki worksheets ne sab badal diya. Ab wo khud bolta hai — 'Mumma, aaj kaun si activity karenge?' Worksheets colourful hain, engaging hain, aur usse lagta hi nahi ke wo actually seekh raha hai. Learning ab fun ban gayi hai!"<div class="name">Kavita L., Chennai</div><div class="loc">Mom of a 5-Year-Old</div></div>
+    </div>
+    <div style="text-align:center;margin-top:26px;">
+      <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- EASY STEPS + REQUIREMENTS -->
+<section class="section-cream">
+  <div class="container">
+    <h2 class="section-title">Easy Steps to Follow</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><h4>Buy Now</h4><p>Complete your secure purchase in under a minute.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h4>Download</h4><p>Get instant access to all 14,000+ worksheets via email.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h4>Print &amp; Enjoy</h4><p>Let your child learn through play, screen-free.</p></div></div>
+    </div>
+    <p style="text-align:center;color:var(--gray);margin-top:26px;">Reduce your stress tremendously</p>
+    <h3 style="text-align:center;font-size:16px;margin:14px 0 6px;">What you need for this Premium eBook bundle</h3>
+    <div class="req-list">
+      <div class="item">✔ A curious 2 – 7 years old kid</div>
+      <div class="item">✔ 15 minutes in a day</div>
+      <div class="item">✔ And a printer</div>
+    </div>
+    <p style="text-align:center;font-size:13px;color:var(--gray);margin-top:10px;">Don't want to get these colored? Try it in grayscale as well.</p>
+    <p style="text-align:center;font-weight:700;margin-top:16px;">⭐⭐⭐⭐⭐ 37,678+ Positive Feedback &amp; Still Counting</p>
+
+    <div class="progress-wrap">
+      <div class="progress-row">
+        <div class="label"><span>Improvement In Attitude (Enthusiasm, Creativity And Much More!)</span><span>85%</span></div>
+        <div class="progress-bar"><div class="fill" style="width:85%"></div></div>
       </div>
-      <div class="testi-card"><!-- TESTIMONIAL 2 -->
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">"[Replace with testimonial 2 text]"</p>
-        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      <div class="progress-row">
+        <div class="label"><span>Improvement In Skills</span><span>89%</span></div>
+        <div class="progress-bar"><div class="fill" style="width:89%"></div></div>
       </div>
-      <div class="testi-card"><!-- TESTIMONIAL 3 -->
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">"[Replace with testimonial 3 text]"</p>
-        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
-      </div>
-      <div class="testi-card"><!-- TESTIMONIAL 4 -->
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">"[Replace with testimonial 4 text]"</p>
-        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
-      </div>
-      <div class="testi-card"><!-- TESTIMONIAL 5 -->
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">"[Replace with testimonial 5 text]"</p>
-        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
-      </div>
-      <div class="testi-card"><!-- TESTIMONIAL 6 -->
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">"[Replace with testimonial 6 text]"</p>
-        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      <div class="progress-row">
+        <div class="label"><span>Improvement In Knowledge</span><span>91%</span></div>
+        <div class="progress-bar"><div class="fill" style="width:91%"></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ HOW IT WORKS ============ -->
-<section class="section-alt">
-  <div class="wrap">
-    <span class="eyebrow">Simple process</span>
-    <h2 class="section-title">Easy steps to follow</h2>
-    <div class="steps-row">
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <div><h3>Buy Now</h3><p>Complete your secure purchase in under a minute</p></div>
+<!-- PRINT / TRACK / AWARD -->
+<section class="section-dark">
+  <div class="container">
+    <h2 class="section-title">Kids Premium Worksheet Bundle...</h2>
+    <div class="bundle-flow">
+      <div class="printer-img"><img src="Printer.webp" alt="Printer printing worksheet"></div>
+      <div class="flow-items">
+        <div class="flow-item"><h4>🖨️ Print</h4><p>Select &amp; Print from 14,000+ worksheets amongst different topics or themes, based on your kid's choice.</p></div>
+        <div class="flow-item"><h4>📈 Track</h4><p>Keep a track of child's daily progress through progress sheet tracker.</p></div>
+        <div class="flow-item"><h4>🏅 Award</h4><p>Award them once they complete a particular skill.</p></div>
       </div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <div><h3>Download</h3><p>Get instant access to all 10,000+ worksheets</p></div>
-      </div>
-      <div class="step-item">
-        <div class="step-num">3</div>
-        <div><h3>Print & Enjoy</h3><p>Let your child learn through play, screen-free</p></div>
+    </div>
+
+    <h3 style="text-align:center;font-size:20px;margin:38px 0 6px;">Why Parents &amp; Teachers Recommend Us?</h3>
+    <div class="why-grid">
+      <div class="why-card"><div style="font-size:26px;">🛒</div><h4 style="color:var(--red);">Instant Download</h4><p>You can instantly download the Premium E-book Bundle once you complete the purchase. You also get lifetime access!</p></div>
+      <div class="why-card"><div style="font-size:26px;">✅</div><h4 style="color:var(--gold);">Premium Quality</h4><p>You can instantly download the Premium E-book Bundle once you complete the purchase. You also get lifetime access!</p></div>
+      <div class="why-card"><div style="font-size:26px;">🎧</div><h4 style="color:#4a90d9;">Live Support 24/7</h4><p>If you encounter any issues throughout the process, feel free to reach out at any time. Our support is available 24/7 for you.</p></div>
+    </div>
+
+    <h3 style="text-align:center;color:var(--red);font-size:18px;margin:38px 0 6px;">Which Will You Choose?</h3>
+    <div class="choice-row">
+      <div class="choice-box a"><img src="choice-money.webp" alt="Keep your money"><div class="cap">A. Keep Your Rs.200/- &amp; Spend Anywhere</div></div>
+      <div class="choice-box b"><img src="choice-kid-studying.webp" alt="Invest in your kid"><div class="cap">B. Invest Rs.200/- In Your Kids Education</div></div>
+    </div>
+
+    <div style="text-align:center;margin-top:30px;">
+      <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-red">GET KIDS WORKSHEETS NOW!<small>Available at 199 INR ONLY</small></a>
+      <div class="timer" style="justify-content:center;margin-top:16px;">
+        <div class="t-box"><b id="t2-d">00</b><small>Days</small></div>
+        <div class="t-box"><b id="t2-h">02</b><small>Hours</small></div>
+        <div class="t-box"><b id="t2-m">00</b><small>Minutes</small></div>
+        <div class="t-box"><b id="t2-s">00</b><small>Seconds</small></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ WHAT YOU NEED ============ -->
-<section>
-  <div class="wrap">
-    <span class="eyebrow">Getting started</span>
-    <h2 class="section-title">What you need for this bundle</h2>
-    <div class="needs-box">
-      <img src="Printer.webp" alt="Home printer" loading="lazy">
-      <div class="needs-list">
-        <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>A curious 2–7 year old</p></div>
-        <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>15 minutes a day</p></div>
-        <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>A printer — colour or black & white, both work</p></div>
-      </div>
-    </div>
-
-    <div class="trust-row">
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
-        <p>Instant Download</p>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2L12 16.4 5.7 21l2.3-7.2-6-4.6h7.6z"/></svg>
-        <p>Premium Quality</p>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-        <p>WhatsApp Support</p>
-      </div>
+<!-- FAQ -->
+<section class="section-dark">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div id="faqList">
+      <div class="faq-item"><button class="faq-q">Printable Worksheets are suitable for which Age group? <span class="icon">+</span></button><div class="faq-a"><p>These worksheets are designed for children aged 2 to 7 years, with age-appropriate difficulty levels across every topic.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What is an E-book Bundle? <span class="icon">+</span></button><div class="faq-a"><p>It's a digital collection of 14,000+ printable worksheet PDFs covering alphabets, numbers, tracing, puzzles, and more.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Why should one purchase this E-Book Bundle? <span class="icon">+</span></button><div class="faq-a"><p>It gives your child screen-free, engaging learning activities at home, prepared by a team with years of early-childhood research.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How will a child benefit from this worksheet? <span class="icon">+</span></button><div class="faq-a"><p>Children build alphabet recognition, counting, fine motor and handwriting skills, along with independent thinking.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How did we create this Premium E-Book Bundle? <span class="icon">+</span></button><div class="faq-a"><p>Our team spent over 2.5 years researching age-appropriate early-learning content with teachers and parenting experts.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Is it a digital product (E-Book) or Physical Product? <span class="icon">+</span></button><div class="faq-a"><p>It's a 100% digital product — delivered instantly to your email as PDF/ZIP files that you print at home.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do I need any special skills or knowledge to use the printable? <span class="icon">+</span></button><div class="faq-a"><p>No special skills needed — just download, print, and hand it to your child.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What size paper should I print on? <span class="icon">+</span></button><div class="faq-a"><p>All worksheets are formatted for standard A4 paper.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Can I print with a black &amp; white printer instead of color? <span class="icon">+</span></button><div class="faq-a"><p>Yes, every worksheet prints just as well in grayscale as in color.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Where do I download the printables? <span class="icon">+</span></button><div class="faq-a"><p>Right after payment, you'll get an email with your download link for instant access.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What payment methods do you support? <span class="icon">+</span></button><div class="faq-a"><p>We support UPI, cards, netbanking and wallets through our secure Razorpay checkout.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Is there any expert support available? <span class="icon">+</span></button><div class="faq-a"><p>Yes, our support team is available 24/7 at support@crevvo.com for any help you need.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ WHICH WILL YOU CHOOSE ============ -->
-<section class="section-alt">
-  <div class="wrap">
-    <h2 class="choice-title">Which would you rather do?</h2>
-    <div class="choice-grid">
-      <div class="choice-card a">
-        <p class="label">A. <b>Spend ₹200</b> on something you won't remember tomorrow</p>
-        <div class="cimg"><img src="choice-money.webp" alt="Spending money on everyday things" loading="lazy"></div>
-      </div>
-      <div class="choice-card b">
-        <p class="label">B. <b>Invest ₹199</b> in your child's early learning</p>
-        <div class="cimg"><img src="choice-kid-studying.webp" alt="Child learning with a worksheet" loading="lazy"></div>
+<!-- GUARANTEE -->
+<section class="section-cream">
+  <div class="container">
+    <div class="guarantee-box">
+      <div class="shield">🛡️</div>
+      <div>
+        <h4>100% INSTANT DELIVERY GUARANTEE!</h4>
+        <p>Receive your product directly to your email within moments of purchase. Enjoy immediate access, hassle-free! If any issues arise, email us at support@crevvo.com for swift resolution. Your satisfaction is our priority. Shop confidently with us!</p>
       </div>
     </div>
-    <div style="margin-top:20px;">
-      <a class="cta-btn" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now — ₹199</a>
-    </div>
+    <p style="text-align:center;margin-top:20px;font-size:13px;">Still have questions? mail us support@crevvo.com (support 24×7, 365 Days a Year)</p>
   </div>
 </section>
 
-<!-- ============ SECOND COUNTDOWN ============ -->
-<div class="countdown-strip">
-  <div class="wrap countdown-inner">
-    <span class="countdown-label">Limited time offer ends in</span>
-    <div class="countdown-clock">
-      <div><span id="cd2-h">02</span><span>hrs</span></div>
-      <div><span id="cd2-m">45</span><span>min</span></div>
-      <div><span id="cd2-s">00</span><span>sec</span></div>
+<!-- FINAL CTA -->
+<div class="offer-strip">
+  <div class="container">
+    <div>
+      <div class="label">Limited Time Offer</div>
+      <div class="timer">
+        <div class="t-box"><b id="t3-h">02</b><small>Hours</small></div>
+        <div class="t-box"><b id="t3-m">00</b><small>Minutes</small></div>
+        <div class="t-box"><b id="t3-s">00</b><small>Seconds</small></div>
+      </div>
     </div>
+    <div class="offer-meta">
+      <span>📖 14,000 Kids Worksheets</span>
+      <span>👥 Team of Experts</span>
+      <span>⭐ Years Of Experience</span>
+    </div>
+    <a href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" target="_blank" class="btn-buy">BUY NOW</a>
   </div>
 </div>
 
-<!-- ============ FAQ ============ -->
-<section class="section-dark">
-  <div class="wrap">
-    <span class="eyebrow">Questions?</span>
-    <h2 class="section-title">Frequently asked questions</h2>
-
-    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
-      <summary style="color:#fff;">What age group is this for?<span class="plus">+</span></summary>
-      <p class="answer" style="color:rgba(255,255,255,0.7);">Ages 2 to 7 — activities are grouped so you can pick what fits your child's stage.</p>
-    </details>
-    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
-      <summary style="color:#fff;">What do I actually receive?<span class="plus">+</span></summary>
-      <p class="answer" style="color:rgba(255,255,255,0.7);">A digital download (PDF/ZIP) with all worksheets, ready to print at home. This is not a physical product.</p>
-    </details>
-    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
-      <summary style="color:#fff;">Do I need a colour printer?<span class="plus">+</span></summary>
-      <p class="answer" style="color:rgba(255,255,255,0.7);">No — every worksheet works fine on a black & white printer too.</p>
-    </details>
-    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
-      <summary style="color:#fff;">What size paper should I use?<span class="plus">+</span></summary>
-      <p class="answer" style="color:rgba(255,255,255,0.7);">Standard A4 paper works for the whole bundle.</p>
-    </details>
-    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
-      <summary style="color:#fff;">How fast will I get access?<span class="plus">+</span></summary>
-      <p class="answer" style="color:rgba(255,255,255,0.7);">Instantly after payment — you'll get a download link on-screen and via WhatsApp/email.</p>
-    </details>
-    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
-      <summary style="color:#fff;">What if I face an issue?<span class="plus">+</span></summary>
-      <p class="answer" style="color:rgba(255,255,255,0.7);">Message us on WhatsApp and we'll sort it out.</p>
-    </details>
-    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
-      <summary style="color:#fff;">What payment methods are supported?<span class="plus">+</span></summary>
-      <p class="answer" style="color:rgba(255,255,255,0.7);">UPI, cards, netbanking and wallets — all handled securely through Razorpay.</p>
-    </details>
-  </div>
-</section>
-
-<!-- ============ GUARANTEE ============ -->
-<section>
-  <div class="wrap">
-    <div class="guarantee-box">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
-      <div>
-        <h3>100% Instant Delivery Guarantee</h3>
-        <p>Your download link is sent the moment payment is confirmed. Any issue — message us on WhatsApp and we'll fix it right away.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
 <footer>
-  <div class="wrap">
-    <div class="footer-brand">
-      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" fill="#128577"/><path d="M50 70 C50 70 30 60 30 40 C30 28 40 24 50 32 C60 24 70 28 70 40 C70 60 50 70 50 70Z" fill="#0B1F1C"/></svg>
-      <span>Growvio</span>
-    </div>
-    <p class="tag">Screen-free learning worksheets for ages 2–7.</p>
-    <div class="footer-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="refund-policy.html">Refund Policy</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-    </div>
-    <p class="footer-disclaimer">This site is not part of the Facebook or Instagram website or Meta Platforms, Inc. Additionally, this site is not endorsed by Facebook or Instagram in any way. Facebook is a trademark of Meta Platforms, Inc.<br><br>© 2026 Growvio. All rights reserved.</p>
+  <p>This site is not part of the Facebook or Instagram website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook or Instagram in any way. Facebook is a trademark of FACEBOOK, Inc.</p>
+  <div class="links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="refund-policy.html">Refund Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
   </div>
 </footer>
 
 <script>
-  // ============ COUNTDOWN TIMER ============
-  // Visual urgency timer — starts at 2h45m and loops. Purely client-side.
-  function startCountdown(hEl, mEl, sEl){
-    let total = 2*3600 + 45*60;
-    setInterval(() => {
-      total--;
-      if (total < 0) total = 2*3600 + 45*60;
-      const h = Math.floor(total/3600);
-      const m = Math.floor((total%3600)/60);
-      const s = total%60;
-      hEl.textContent = String(h).padStart(2,'0');
-      mEl.textContent = String(m).padStart(2,'0');
-      sEl.textContent = String(s).padStart(2,'0');
-    }, 1000);
+/* ---------- Countdown timers ---------- */
+function startCountdown(hours, ids){
+  let end = Date.now() + hours*3600*1000;
+  function tick(){
+    let diff = end - Date.now();
+    if(diff <= 0){ end = Date.now() + hours*3600*1000; diff = hours*3600*1000; }
+    const h = Math.floor(diff/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    const s = Math.floor((diff%60000)/1000);
+    if(ids.h) document.getElementById(ids.h).textContent = String(h).padStart(2,'0');
+    if(ids.m) document.getElementById(ids.m).textContent = String(m).padStart(2,'0');
+    if(ids.s) document.getElementById(ids.s).textContent = String(s).padStart(2,'0');
+    if(ids.d) document.getElementById(ids.d).textContent = '00';
   }
-  startCountdown(document.getElementById('cd-h'), document.getElementById('cd-m'), document.getElementById('cd-s'));
-  startCountdown(document.getElementById('cd2-h'), document.getElementById('cd2-m'), document.getElementById('cd2-s'));
+  tick();
+  setInterval(tick,1000);
+}
+startCountdown(2,{h:'t1-h',m:'t1-m',s:'t1-s'});
+startCountdown(2,{d:'t2-d',h:'t2-h',m:'t2-m',s:'t2-s'});
+startCountdown(2,{h:'t3-h',m:'t3-m',s:'t3-s'});
 
+/* ---------- FAQ accordion ---------- */
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item = btn.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ---------- Generic slider engine ---------- */
+const sliderState = {};
+function initSlider(trackId,total,perView,dotsId){
+  sliderState[trackId] = {index:0, total, perView};
+  if(dotsId){
+    const dotsEl = document.getElementById(dotsId);
+    const dotCount = Math.max(1,total - perView + 1);
+    for(let i=0;i<dotCount;i++){
+      const d = document.createElement('button');
+      d.className = 'dot'+(i===0?' active':'');
+      d.onclick = ()=>goToSlide(trackId,i,total,perView,dotsId);
+      dotsEl.appendChild(d);
+    }
+  }
+}
+function updateDots(trackId,dotsId){
+  if(!dotsId) return;
+  const dotsEl = document.getElementById(dotsId);
+  const st = sliderState[trackId];
+  [...dotsEl.children].forEach((d,i)=>d.classList.toggle('active', i===st.index));
+}
+function goToSlide(trackId, idx, total, perView, dotsId){
+  const st = sliderState[trackId];
+  const maxIndex = Math.max(0, total - perView);
+  st.index = Math.min(Math.max(idx,0), maxIndex);
+  const track = document.getElementById(trackId);
+  const pct = (100/perView) * st.index;
+  track.style.transform = `translateX(-${pct}%)`;
+  updateDots(trackId,dotsId);
+}
+function moveSlider(trackId, dir, total, perView){
+  const st = sliderState[trackId];
+  let dotsId = trackId === 'waTrack' ? 'waDots' : (trackId === 'sampleTrack' ? 'sampleDots' : null);
+  goToSlide(trackId, st.index+dir, total, perView, dotsId);
+}
+
+initSlider('waTrack',5,1,'waDots');
+initSlider('sampleTrack',11,3,'sampleDots');
+
+/* Auto-play both sliders */
+setInterval(()=>moveSlider('waTrack',1,5,1), 4000);
+setInterval(()=>moveSlider('sampleTrack',1,11,3), 3500);
+
+/* Adjust perView for sample slider responsively */
+function adjustSamplePerView(){
+  const perView = window.innerWidth <= 700 ? 1 : 3;
+  sliderState['sampleTrack'].perView = perView;
+  goToSlide('sampleTrack', 0, 11, perView, 'sampleDots');
+}
+window.addEventListener('resize', adjustSamplePerView);
 </script>
-
 </body>
 </html>
