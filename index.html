@@ -786,7 +786,10 @@ function updateDots(trackId,dotsId){
 function goToSlide(trackId, idx, dotsId){
   const st = sliderState[trackId];
   const maxIndex = Math.max(0, st.total - st.perView);
-  st.index = Math.min(Math.max(idx,0), maxIndex);
+  // wrap around so autoplay loops forever instead of freezing at the last slide
+  if(idx > maxIndex) idx = 0;
+  else if(idx < 0) idx = maxIndex;
+  st.index = idx;
   const track = document.getElementById(trackId);
   const pct = (100/st.perView) * st.index;
   track.style.transform = `translateX(-${pct}%)`;
