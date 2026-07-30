@@ -1,862 +1,814 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khud Ke Liye — Apni Favourite Dress Fir Se Pehno</title>
-  <script>
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-      document,'script','https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '745955801338372');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=745955801338372&ev=PageView&noscript=1"
-    /></noscript>
-  <style>
-    :root {
-      --cream: #FBF7F2;
-      --warm-white: #FFFFFF;
-      --terracotta: #C1432A;
-      --terracotta-light: #F5EAE7;
-      --teal: #2D5249;
-      --gold: #D4A017;
-      --text-dark: #1A1A1A;
-      --text-soft: #5A5A5A;
-      --border: #E8DDD6;
-      --green: #22C55E;
-      --red-x: #EF4444;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growvio — 10,000+ Kids Worksheets Bundle | Ages 2-7</title>
+<meta name="description" content="Printable worksheets for ages 2-7. Tracing, numbers, alphabets, puzzles and more. Instant download, print anytime.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230E6E63'/%3E%3Cpath d='M50 70 C50 70 30 60 30 40 C30 28 40 24 50 32 C60 24 70 28 70 40 C70 60 50 70 50 70Z' fill='%23F6F8F7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<style>
+  /* ============ DESIGN TOKENS ============ */
+  :root{
+    --teal-900:#0A4A43;
+    --teal-700:#0E6E63;
+    --teal-600:#128577;
+    --teal-100:#E3F1EE;
+    --teal-50:#F0F7F6;
+    --bg:#F6F8F7;
+    --surface:#FFFFFF;
+    --ink:#1C2B29;
+    --ink-soft:#52635F;
+    --ink-faint:#84948F;
+    --line:#DCE6E3;
+    --coral:#E1553F;
+    --coral-dark:#C6432F;
+    --amber:#F0A93E;
+    --green:#2E9E63;
+    --green-bg:#E9F7EF;
+    --radius-sm:10px;
+    --radius-md:16px;
+    --radius-lg:26px;
+    --shadow-sm:0 2px 10px rgba(15,50,45,0.06);
+    --shadow-md:0 10px 30px rgba(15,50,45,0.10);
+    --font-display:'Baloo 2', system-ui, sans-serif;
+    --font-body:'Inter', system-ui, sans-serif;
+    --wrap:660px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--font-body);
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 18px;}
+  h1,h2,h3{font-family:var(--font-display);font-weight:700;color:var(--ink);letter-spacing:-0.01em;}
+  a{color:inherit;}
+  button{font-family:inherit;cursor:pointer;border:none;}
+  :focus-visible{outline:3px solid var(--amber);outline-offset:2px;}
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* dotted tracing-line motif — used as the recurring signature device */
+  .trace-divider{
+    height:0;border-top:2.5px dashed var(--line);
+    margin:0;
+  }
+  .trace-divider.on-dark{border-top-color:rgba(255,255,255,0.18);}
 
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: var(--cream);
-      color: var(--text-dark);
-      font-size: 15px;
-      line-height: 1.6;
-    }
+  /* ============ TOP BAR ============ */
+  .topbar{
+    background:var(--teal-900);color:#fff;
+    text-align:center;font-size:12.5px;font-weight:600;
+    padding:9px 14px;letter-spacing:0.01em;
+  }
+  .topbar span{color:var(--amber);}
 
-    /* HEADER */
-    .header {
-      background: var(--warm-white);
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .logo {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--terracotta);
-    }
-    .rating-badge {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      color: var(--text-soft);
-    }
-    .stars-gold { color: var(--gold); font-size: 13px; }
+  /* ============ HERO ============ */
+  .hero{
+    background:linear-gradient(180deg, var(--teal-50) 0%, var(--bg) 100%);
+    padding:26px 0 30px;
+  }
+  .brandmark{display:flex;align-items:center;gap:8px;margin-bottom:18px;}
+  .brandmark svg{width:26px;height:26px;flex-shrink:0;}
+  .brandmark span{font-family:var(--font-display);font-weight:700;font-size:17px;color:var(--teal-900);}
+  .hero-grid{display:flex;flex-direction:column;gap:20px;}
+  .hero h1{font-size:29px;line-height:1.22;margin-bottom:10px;}
+  .hero h1 em{font-style:normal;color:var(--teal-700);}
+  .hero-sub{font-size:15px;color:var(--ink-soft);margin-bottom:18px;max-width:52ch;}
+  .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;}
+  .hero-badge{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-soft);font-weight:500;}
+  .hero-badge svg{width:15px;height:15px;color:var(--teal-700);flex-shrink:0;}
+  .hero-img-box{
+    background:var(--surface);border-radius:var(--radius-lg);
+    padding:20px;box-shadow:var(--shadow-md);
+    display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--line);
+  }
+  .hero-img-box img{max-height:280px;width:auto;margin:0 auto;}
+  .price-row{
+    display:flex;align-items:center;gap:12px;
+    background:var(--green-bg);border-radius:var(--radius-md);
+    padding:14px 16px;margin-bottom:14px;
+  }
+  .price-old{font-size:14px;color:var(--ink-faint);text-decoration:line-through;}
+  .price-new{font-size:26px;font-weight:800;color:var(--green);font-family:var(--font-display);}
+  .price-tag{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--green);background:#fff;padding:4px 10px;border-radius:20px;}
+  .cta-btn{
+    display:block;width:100%;text-align:center;
+    background:var(--coral);color:#fff;
+    font-family:var(--font-display);font-weight:700;font-size:16px;
+    padding:16px;border-radius:var(--radius-md);
+    box-shadow:0 8px 20px rgba(225,85,63,0.35);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta-btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(225,85,63,0.42);}
+  .cta-sub{text-align:center;font-size:12px;color:var(--ink-faint);margin-top:9px;}
+  @media (prefers-reduced-motion: no-preference){
+    .cta-btn.pulse{animation:pulse 2.4s ease-in-out infinite;}
+  }
+  @keyframes pulse{
+    0%,100%{box-shadow:0 8px 20px rgba(225,85,63,0.35);}
+    50%{box-shadow:0 8px 26px rgba(225,85,63,0.55);}
+  }
 
-    /* HERO */
-    .hero {
-      background: var(--warm-white);
-      padding: 20px 16px 24px;
-    }
-    .hero-eyebrow {
-      background: var(--terracotta-light);
-      color: var(--terracotta);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 20px;
-      display: inline-block;
-      margin-bottom: 12px;
-    }
-    .hero h1 {
-      font-size: 28px;
-      font-weight: 800;
-      line-height: 1.2;
-      color: var(--text-dark);
-      margin-bottom: 8px;
-    }
-    .hero h1 span { color: var(--terracotta); }
-    .hero-sub {
-      font-size: 14px;
-      color: var(--text-soft);
-      margin-bottom: 16px;
-    }
+  /* ============ COUNTDOWN STRIP ============ */
+  .countdown-strip{
+    background:var(--ink);color:#fff;
+    padding:12px 0;
+  }
+  .countdown-inner{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;}
+  .countdown-label{font-size:12px;color:var(--amber);font-weight:600;text-transform:uppercase;letter-spacing:0.04em;}
+  .countdown-clock{display:flex;gap:6px;}
+  .countdown-clock div{
+    background:rgba(255,255,255,0.08);border-radius:8px;
+    padding:5px 9px;font-family:var(--font-display);font-weight:700;font-size:15px;
+    min-width:38px;text-align:center;
+  }
+  .countdown-clock span{display:block;font-size:8px;font-weight:400;color:var(--ink-faint);text-transform:uppercase;margin-top:1px;}
 
-    /* VIDEO */
-    .video-wrap {
-      border-radius: 14px;
-      overflow: hidden;
-      margin-bottom: 16px;
-      background: #000;
-      position: relative;
-      cursor: pointer;
-    }
-    .video-wrap img {
-      width: 100%;
-      display: block;
-      opacity: 0.9;
-    }
-    .play-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 56px;
-      height: 56px;
-      background: rgba(255,255,255,0.9);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .play-overlay svg { width: 24px; height: 24px; fill: var(--terracotta); margin-left: 4px; }
-    .video-iframe {
-      display: none;
-      width: 100%;
-      aspect-ratio: 9/16;
-      border: none;
-    }
-    .video-wrap.playing img,
-    .video-wrap.playing .play-overlay { display: none; }
-    .video-wrap.playing .video-iframe { display: block; }
+  /* ============ GENERIC SECTION ============ */
+  section{padding:38px 0;}
+  .eyebrow{
+    font-size:12px;font-weight:700;color:var(--teal-700);
+    text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;
+    display:block;
+  }
+  .section-title{font-size:23px;margin-bottom:10px;}
+  .section-sub{font-size:14.5px;color:var(--ink-soft);margin-bottom:22px;max-width:56ch;}
+  .section-dark{background:var(--teal-900);color:#fff;}
+  .section-dark .section-title{color:#fff;}
+  .section-dark .eyebrow{color:var(--amber);}
+  .section-alt{background:var(--surface);}
 
-    /* FEATURE ICONS */
-    .feature-icons {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-    .feature-icon {
-      background: var(--cream);
-      border-radius: 10px;
-      padding: 10px 6px;
-      text-align: center;
-      font-size: 11px;
-      color: var(--text-soft);
-    }
-    .feature-icon span { display: block; font-size: 20px; margin-bottom: 4px; }
+  /* ============ PROBLEM LIST ============ */
+  .problem-list{display:flex;flex-direction:column;gap:12px;}
+  .problem-item{
+    display:flex;gap:12px;align-items:flex-start;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius-sm);padding:13px 15px;
+  }
+  .problem-item svg{width:19px;height:19px;color:var(--coral);flex-shrink:0;margin-top:2px;}
+  .problem-item p{font-size:14px;color:var(--ink);}
 
-    /* PRICE BOX */
-    .price-box {
-      background: var(--cream);
-      border-radius: 14px;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-    .price-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 4px;
-    }
-    .price-original {
-      font-size: 14px;
-      color: var(--text-soft);
-      text-decoration: line-through;
-    }
-    .price-label { font-size: 12px; color: var(--terracotta); font-weight: 600; }
-    .price-main {
-      font-size: 36px;
-      font-weight: 800;
-      color: var(--terracotta);
-    }
-    .price-note { font-size: 12px; color: var(--text-soft); margin-bottom: 12px; }
-    .trust-row {
-      display: flex;
-      gap: 12px;
-      font-size: 12px;
-      color: var(--teal);
-      margin-bottom: 12px;
-    }
-    .trust-row span { display: flex; align-items: center; gap: 4px; }
+  /* ============ BENEFIT CARDS ============ */
+  .card-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .benefit-card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius-md);padding:16px;
+  }
+  .benefit-card svg{width:24px;height:24px;color:var(--teal-700);margin-bottom:10px;}
+  .benefit-card h3{font-size:14.5px;margin-bottom:5px;font-family:var(--font-body);font-weight:700;}
+  .benefit-card p{font-size:12.5px;color:var(--ink-soft);line-height:1.5;}
 
-    /* BUTTONS */
-    .btn-primary {
-      display: block;
-      width: 100%;
-      background: var(--terracotta);
-      color: white;
-      text-align: center;
-      padding: 16px;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      letter-spacing: 0.02em;
-      margin-bottom: 8px;
-    }
-    .btn-secure {
-      text-align: center;
-      font-size: 11px;
-      color: var(--text-soft);
-    }
-    .delivery-note {
-      text-align: center;
-      font-size: 12px;
-      color: var(--teal);
-      font-weight: 600;
-      margin-top: 8px;
-    }
+  /* ============ AWARENESS STRIPS ============ */
+  .aware-strip{
+    display:flex;align-items:center;gap:10px;
+    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);
+    border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:9px;
+  }
+  .aware-strip svg{width:18px;height:18px;color:var(--amber);flex-shrink:0;}
+  .aware-strip p{font-size:13px;color:rgba(255,255,255,0.88);}
+  .aware-strip b{color:#fff;}
 
-    /* SECTION */
-    section { padding: 28px 16px; }
-    .section-eyebrow {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--terracotta);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .section-title {
-      font-size: 22px;
-      font-weight: 800;
-      line-height: 1.3;
-      margin-bottom: 16px;
-    }
+  /* ============ CATEGORY GRID ============ */
+  .cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px;}
+  .cat-card{
+    background:var(--surface);border-radius:var(--radius-md);
+    overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);
+  }
+  .cat-card .cat-img{
+    aspect-ratio:4/3;background:var(--teal-50);
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+    padding:10px;
+  }
+  .cat-card .cat-img img{width:100%;height:100%;object-fit:contain;}
+  .cat-card .cat-label{
+    padding:9px 10px;font-size:12.5px;font-weight:700;
+    text-align:center;background:var(--teal-900);color:#fff;
+  }
+  .cat-more{
+    text-align:center;font-size:13.5px;font-weight:600;color:var(--teal-700);
+    background:var(--teal-100);border-radius:var(--radius-sm);padding:11px;
+  }
 
-    /* PAIN POINTS */
-    .pain { background: var(--warm-white); }
-    .pain-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    .pain-card {
-      background: var(--cream);
-      border-radius: 10px;
-      padding: 12px;
-      font-size: 13px;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-    }
-    .pain-card span { font-size: 18px; flex-shrink: 0; }
+  /* ============ CHECKLIST ============ */
+  .check-list{display:flex;flex-direction:column;gap:9px;}
+  .check-item{
+    display:flex;align-items:center;gap:10px;
+    background:var(--surface);border:1.5px solid var(--green);
+    border-radius:var(--radius-sm);padding:11px 13px;
+  }
+  .check-item svg{width:17px;height:17px;color:var(--green);flex-shrink:0;}
+  .check-item p{font-size:13.5px;font-weight:500;}
 
-    /* IMAGINE */
-    .imagine {
-      background: var(--terracotta);
-      color: white;
-      padding: 28px 16px;
-    }
-    .imagine .section-eyebrow { color: rgba(255,255,255,0.7); }
-    .imagine .section-title { color: white; }
-    .imagine-list { list-style: none; }
-    .imagine-list li {
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      font-size: 14px;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-    }
-    .imagine-list li:last-child { border-bottom: none; }
-    .check-white { color: #A8E6CF; font-size: 16px; }
+  /* ============ CAROUSELS (scroll-snap) ============ */
+  .carousel{
+    display:flex;gap:12px;overflow-x:auto;
+    scroll-snap-type:x mandatory;padding:4px 18px 14px;
+    margin:0 -18px;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .carousel::-webkit-scrollbar{display:none;}
+  .carousel-card{scroll-snap-align:start;flex-shrink:0;}
 
-    /* TRANSFORMATIONS */
-    .transformations { background: var(--warm-white); }
-    .testimonial-card {
-      background: var(--cream);
-      border-radius: 14px;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-    .before-after {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
-    .before-after figure { position: relative; }
-    .before-after img {
-      width: 100%;
-      border-radius: 10px;
-      display: block;
-      object-fit: cover;
-      height: 180px;
-    }
-    .ba-label {
-      position: absolute;
-      bottom: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0,0,0,0.7);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 2px 10px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .testimonial-name {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--terracotta);
-      margin-bottom: 2px;
-    }
-    .testimonial-loc { font-size: 12px; color: var(--text-soft); margin-bottom: 6px; }
-    .stars { color: var(--gold); font-size: 14px; margin-bottom: 8px; }
-    .testimonial-card p { font-size: 13px; color: var(--text-soft); margin-bottom: 6px; line-height: 1.6; }
+  .sample-card{width:150px;}
+  .sample-card .frame{
+    background:var(--surface);border-radius:var(--radius-sm);
+    padding:8px;border:1px solid var(--line);box-shadow:var(--shadow-sm);
+    aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .sample-card .frame img{width:100%;height:100%;object-fit:cover;border-radius:6px;}
 
-    /* WHATSAPP REVIEWS */
-    .wa-reviews { background: var(--cream); }
-    .wa-chat {
-      background: #E9FBE9;
-      border-radius: 12px;
-      padding: 12px 14px;
-      margin-bottom: 10px;
-      font-size: 13px;
-      position: relative;
-      max-width: 85%;
-    }
-    .wa-chat::before {
-      content: '';
-      position: absolute;
-      left: -8px;
-      top: 12px;
-      border: 8px solid transparent;
-      border-right-color: #E9FBE9;
-      border-left: 0;
-    }
-    .wa-time { font-size: 10px; color: #888; margin-top: 4px; text-align: right; }
-    .wa-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-    .wa-avatar {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: var(--terracotta);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 14px;
-    }
+  .highlight-card{width:240px;}
+  .highlight-card .frame{
+    background:var(--surface);border-radius:var(--radius-md);
+    padding:10px;border:1px solid var(--line);box-shadow:var(--shadow-md);
+    aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .highlight-card .frame img{width:100%;height:100%;object-fit:cover;border-radius:10px;}
 
-    /* WHAT YOU GET */
-    .benefits { background: var(--warm-white); }
-    .benefit-list { list-style: none; }
-    .benefit-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .benefit-item:last-child { border-bottom: none; }
-    .benefit-icon { font-size: 22px; flex-shrink: 0; }
-    .benefit-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
-    .benefit-text span { font-size: 12px; color: var(--text-soft); }
+  .wa-card{width:210px;}
+  .wa-card .frame{
+    background:#0B141A;border-radius:18px;padding:6px;
+    box-shadow:var(--shadow-md);
+  }
+  .wa-card .frame img{border-radius:14px;width:100%;}
 
-    /* VS TABLE */
-    .vs-section { background: var(--cream); }
-    .vs-table {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: 0;
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-    }
-    .vs-col { padding: 0; }
-    .vs-header {
-      padding: 12px;
-      text-align: center;
-      font-size: 13px;
-      font-weight: 700;
-    }
-    .vs-header.bad { background: #FEE2E2; color: var(--red-x); }
-    .vs-header.good { background: #DCFCE7; color: var(--teal); }
-    .vs-middle-header {
-      padding: 12px 8px;
-      background: var(--text-dark);
-      color: white;
-      font-weight: 800;
-      font-size: 14px;
-      text-align: center;
-    }
-    .vs-row {
-      display: contents;
-    }
-    .vs-cell {
-      padding: 10px 12px;
-      font-size: 12px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .vs-cell.bad { background: #fff; color: var(--text-soft); }
-    .vs-cell.good { background: #F0FDF4; color: var(--teal); }
-    .vs-cell.mid { background: #F8F8F8; border-top: 1px solid #eee; }
-    .x-icon { color: var(--red-x); font-size: 14px; }
-    .check-icon { color: var(--green); font-size: 14px; }
+  .scroll-hint{text-align:center;font-size:11.5px;color:var(--ink-faint);margin-top:2px;}
+  .scroll-hint.on-dark{color:rgba(255,255,255,0.5);}
 
-    /* FAQ */
-    .faq { background: var(--warm-white); }
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-    }
-    .faq-q {
-      width: 100%;
-      background: none;
-      border: none;
-      padding: 14px 0;
-      text-align: left;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--terracotta);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .faq-a {
-      font-size: 13px;
-      color: var(--text-soft);
-      padding-bottom: 14px;
-      display: none;
-      line-height: 1.6;
-    }
-    .faq-a.open { display: block; }
+  /* ============ TESTIMONIALS ============ */
+  .testi-grid{display:flex;flex-direction:column;gap:12px;}
+  .testi-card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius-md);padding:16px;
+  }
+  .testi-stars{color:var(--amber);font-size:13px;margin-bottom:8px;letter-spacing:2px;}
+  .testi-card p.quote{font-size:13.5px;color:var(--ink);line-height:1.6;margin-bottom:10px;}
+  .testi-name{font-size:12.5px;font-weight:700;}
+  .testi-loc{font-size:11.5px;color:var(--ink-faint);}
 
-    /* FINAL CTA */
-    .final-cta { background: var(--warm-white); padding: 28px 16px; }
-    .final-offer {
-      background: var(--cream);
-      border: 2px solid var(--terracotta);
-      border-radius: 16px;
-      padding: 20px 16px;
-      text-align: center;
-      margin-bottom: 16px;
-    }
-    .offer-badge {
-      background: var(--terracotta);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 4px 14px;
-      border-radius: 20px;
-      display: inline-block;
-      margin-bottom: 12px;
-    }
-    .offer-original {
-      font-size: 14px;
-      color: var(--text-soft);
-      text-decoration: line-through;
-      margin-bottom: 4px;
-    }
-    .offer-price {
-      font-size: 48px;
-      font-weight: 800;
-      color: var(--terracotta);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-    .offer-save {
-      background: #FEF3C7;
-      color: #92400E;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 3px 12px;
-      border-radius: 20px;
-      display: inline-block;
-      margin-bottom: 12px;
-    }
-    .payment-methods {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 8px;
-    }
-    .pm-badge {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 4px 10px;
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-soft);
-    }
+  /* ============ STEPS ============ */
+  .steps-row{display:flex;flex-direction:column;gap:14px;}
+  .step-item{display:flex;gap:14px;align-items:flex-start;}
+  .step-num{
+    width:34px;height:34px;border-radius:50%;background:var(--teal-700);
+    color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .step-item h3{font-size:14.5px;margin-bottom:3px;font-family:var(--font-body);font-weight:700;}
+  .step-item p{font-size:12.5px;color:var(--ink-soft);}
 
-    /* TRUST BADGES */
-    .trust-badges {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 16px;
-    }
-    .trust-badge {
-      text-align: center;
-      font-size: 11px;
-      color: var(--text-soft);
-    }
-    .trust-badge span { display: block; font-size: 22px; margin-bottom: 4px; }
+  /* ============ NEEDS ROW ============ */
+  .needs-box{
+    display:flex;gap:16px;align-items:center;
+    background:var(--surface);border-radius:var(--radius-md);
+    padding:16px;border:1px solid var(--line);margin-bottom:18px;
+  }
+  .needs-box img{width:88px;height:88px;object-fit:contain;flex-shrink:0;}
+  .needs-list{display:flex;flex-direction:column;gap:8px;}
+  .needs-list .check-item{border:none;background:var(--teal-50);padding:8px 11px;}
 
-    /* FUTURE */
-    .future { background: var(--terracotta); padding: 28px 16px; text-align: center; }
-    .future h2 { color: white; font-size: 22px; font-weight: 800; margin-bottom: 8px; }
-    .future p { color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 16px; }
-    .future img { width: 100%; max-width: 280px; border-radius: 14px; margin: 0 auto 20px; display: block; }
+  /* ============ TRUST BADGES ============ */
+  .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .trust-item{text-align:center;padding:14px 8px;}
+  .trust-item svg{width:26px;height:26px;color:var(--teal-700);margin:0 auto 8px;}
+  .trust-item p{font-size:11.5px;font-weight:600;color:var(--ink-soft);}
 
-    /* FOOTER */
-    footer {
-      background: var(--warm-white);
-      border-top: 1px solid var(--border);
-      padding: 24px 16px;
-      text-align: center;
-    }
-    .footer-logo { font-size: 18px; font-weight: 700; color: var(--terracotta); margin-bottom: 4px; }
-    .footer-tagline { font-size: 12px; color: var(--text-soft); margin-bottom: 12px; }
-    .footer-links { font-size: 12px; margin-bottom: 8px; }
-    .footer-links a { color: var(--terracotta); text-decoration: none; margin: 0 6px; }
-    .footer-copy { font-size: 11px; color: var(--text-soft); }
-    .footer-contact { font-size: 12px; color: var(--text-soft); margin-bottom: 8px; }
-    .footer-contact a { color: var(--terracotta); }
-  </style>
+  /* ============ CHOICE (A/B) ============ */
+  .choice-title{text-align:center;font-size:21px;margin-bottom:18px;}
+  .choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .choice-card{
+    border:2px dashed var(--line);border-radius:var(--radius-md);
+    padding:10px;background:var(--surface);
+  }
+  .choice-card.b{border-color:var(--teal-600);background:var(--teal-50);}
+  .choice-card .label{font-size:12px;font-weight:700;margin-bottom:8px;line-height:1.35;min-height:34px;}
+  .choice-card .label b{color:var(--coral);}
+  .choice-card.b .label b{color:var(--teal-700);}
+  .choice-card .cimg{aspect-ratio:1/1;border-radius:var(--radius-sm);overflow:hidden;}
+  .choice-card .cimg img{width:100%;height:100%;object-fit:cover;}
+
+  /* ============ FAQ ============ */
+  .faq-item{
+    border-bottom:1px solid var(--line);padding:15px 2px;
+  }
+  .faq-item summary{
+    list-style:none;cursor:pointer;font-size:14px;font-weight:600;
+    display:flex;justify-content:space-between;align-items:center;gap:10px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .plus{
+    width:20px;height:20px;border-radius:50%;background:var(--teal-100);
+    color:var(--teal-700);display:flex;align-items:center;justify-content:center;
+    font-size:15px;flex-shrink:0;transition:transform .2s ease;
+  }
+  .faq-item[open] summary .plus{transform:rotate(45deg);}
+  .faq-item p.answer{font-size:13px;color:var(--ink-soft);margin-top:10px;line-height:1.6;}
+
+  /* ============ GUARANTEE ============ */
+  .guarantee-box{
+    display:flex;gap:14px;align-items:center;
+    background:var(--surface);border:1.5px solid var(--teal-700);
+    border-radius:var(--radius-md);padding:16px;
+  }
+  .guarantee-box svg{width:44px;height:44px;color:var(--teal-700);flex-shrink:0;}
+  .guarantee-box h3{font-size:14.5px;margin-bottom:4px;font-family:var(--font-body);font-weight:700;}
+  .guarantee-box p{font-size:12px;color:var(--ink-soft);line-height:1.5;}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:30px 0 22px;}
+  .footer-brand{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+  .footer-brand svg{width:22px;height:22px;}
+  .footer-brand span{font-family:var(--font-display);font-weight:700;color:#fff;font-size:16px;}
+  footer p.tag{font-size:12.5px;margin-bottom:18px;color:rgba(255,255,255,0.55);}
+  .footer-links{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;margin-bottom:16px;}
+  .footer-links a{color:rgba(255,255,255,0.75);text-decoration:none;}
+  .footer-links a:hover{color:#fff;}
+  .footer-disclaimer{font-size:10.5px;color:rgba(255,255,255,0.35);line-height:1.6;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px;}
+
+  /* ============ DESKTOP ============ */
+  @media (min-width:760px){
+    .hero-grid{flex-direction:column;}
+    .hero h1{font-size:36px;}
+    .card-grid{grid-template-columns:repeat(4,1fr);}
+    .cat-grid{grid-template-columns:repeat(5,1fr);}
+    .choice-grid{max-width:520px;margin:0 auto;}
+  }
+</style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="logo">Khud Ke Liye ❤️</div>
-  <div class="rating-badge">
-    <span class="stars-gold">★ 4.9/5</span>
-    <span>1000+ Women</span>
+<!-- Assumes all image files sit in a single "images/" folder next to this HTML file.
+     If your repo uses subfolders (e.g. images/samples/, images/whatsapp/), do a
+     find-and-replace on the folder prefixes below before publishing. -->
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">📦 Instant download after payment — no waiting</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="brandmark">
+      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" fill="#0E6E63"/><path d="M50 70 C50 70 30 60 30 40 C30 28 40 24 50 32 C60 24 70 28 70 40 C70 60 50 70 50 70Z" fill="#F6F8F7"/></svg>
+      <span>Growvio</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1>Busy Hands, <em>Less Screen Time</em></h1>
+        <p class="hero-sub">10,000+ printable worksheets for ages 2–7 — tracing, alphabets, numbers, puzzles and more. Print once, hand it over anytime.</p>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+            Instant download
+          </div>
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="16" height="14" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+            Print anytime, at home
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-img-box">
+        <img src="images/productbox.png" alt="Growvio 10,000+ Kids Worksheets bundle" loading="eager">
+      </div>
+
+      <div>
+        <div class="price-row">
+          <div>
+            <div class="price-old">₹1999</div>
+            <div class="price-new">₹199</div>
+          </div>
+          <div class="price-tag">90% OFF today</div>
+        </div>
+        <button class="cta-btn pulse" onclick="openCheckout()">Get the Worksheets Now</button>
+        <p class="cta-sub">142 parents grabbed this in the last 24 hours</p>
+      </div>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-eyebrow">Complete 90 Day Home Transformation Program</div>
-  <h1>Apni Favourite Dress<br /><span>Fir Se Pehno ❤️</span></h1>
-  <p class="hero-sub">Sirf 10–15 minute daily, bina gym, bina strict diet. Normal ghar ka khana khao aur khud ko fir se confident feel karo.</p>
-
-  <!-- VIDEO -->
-  <div class="video-wrap" id="videoWrap" onclick="playVideo()">
-    <img src="https://img.youtube.com/vi/IlsJGDzXMPI/maxresdefault.jpg" alt="Khud Ke Liye Program" />
-    <div class="play-overlay">
-      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+<!-- ============ COUNTDOWN ============ -->
+<div class="countdown-strip">
+  <div class="wrap countdown-inner">
+    <span class="countdown-label">Offer ends in</span>
+    <div class="countdown-clock" id="countdown">
+      <div><span id="cd-h">02</span><span>hrs</span></div>
+      <div><span id="cd-m">45</span><span>min</span></div>
+      <div><span id="cd-s">00</span><span>sec</span></div>
     </div>
-    <iframe class="video-iframe" id="videoFrame"
-      src=""
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
   </div>
+</div>
 
-  <!-- FEATURE ICONS -->
-  <div class="feature-icons">
-    <div class="feature-icon"><span>🏠</span>Home Workout</div>
-    <div class="feature-icon"><span>🍛</span>Indian Food</div>
-    <div class="feature-icon"><span>⏱️</span>10–15 Min Daily</div>
-    <div class="feature-icon"><span>🔒</span>Secure Razorpay</div>
-  </div>
-
-  <!-- PRICE -->
-  <div class="price-box">
-    <div class="price-row">
-      <span class="price-label">Worth</span>
-      <span class="price-original">₹1999</span>
-      <span class="price-label">Today Only</span>
+<!-- ============ SOUND FAMILIAR (PROBLEM) ============ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Sound familiar?</span>
+    <h2 class="section-title">Every parent runs into this</h2>
+    <div class="problem-list">
+      <div class="problem-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+        <p>The phone is the one thing that keeps them still for 10 minutes</p>
+      </div>
+      <div class="problem-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <p>Attention span feels shorter every month</p>
+      </div>
+      <div class="problem-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/></svg>
+        <p>Free videos keep them busy — but they're not really learning anything</p>
+      </div>
+      <div class="problem-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <p>Not quite "school age" yet, so nothing structured is made for them</p>
+      </div>
     </div>
-    <div class="price-main">₹99</div>
-    <div class="price-note">Sirf ₹0.9 per din se bhi kam!</div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="section-alt">
+  <div class="wrap">
+    <span class="eyebrow">The simple fix</span>
+    <h2 class="section-title">What you're giving your child</h2>
+    <div class="card-grid">
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+        <h3>Screen time → learning time</h3>
+        <p>A hands-on alternative that's just as easy to hand over as a phone</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.42A12 12 0 0112 21a12 12 0 01-6.16-10.42L12 14z"/></svg>
+        <h3>Gets school-ready</h3>
+        <p>Alphabet, number and pencil-grip practice before school starts</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2L12 16.4 5.7 21l2.3-7.2-6-4.6h7.6z"/></svg>
+        <h3>Builds real fundamentals</h3>
+        <p>Shapes, counting and letters — the basics every child needs early on</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Learns to sit & finish</h3>
+        <p>Short, achievable activities that build focus a little at a time</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARENESS ============ -->
+<section class="section-dark">
+  <div class="wrap">
+    <span class="eyebrow">Worth thinking about</span>
+    <h2 class="section-title">Why parents are cutting down screen time</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.75);">Paediatricians and parenting researchers commonly flag a few patterns with heavy early screen use:</p>
+    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg><p><b>Attention & mood</b> — more restlessness once the screen goes off</p></div>
+    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><p><b>Early learning</b> — passive watching vs. active, hands-on practice</p></div>
+    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 00-6 6c0 4 3 5 3 8h6c0-3 3-4 3-8a6 6 0 00-6-6z"/><path d="M10 21h4"/></svg><p><b>Sleep</b> — screen exposure close to bedtime affects wind-down</p></div>
+    <div class="aware-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="3"/><path d="M2 21v-1a5 5 0 015-5h1a5 5 0 015 5v1"/><circle cx="17" cy="7" r="3"/></svg><p><b>Social play</b> — fewer chances to practise sharing, turn-taking, focus</p></div>
+  </div>
+</section>
+
+<!-- ============ WHAT'S INSIDE — CATEGORY GRID ============ -->
+<section class="section-alt">
+  <div class="wrap">
+    <span class="eyebrow">Inside the bundle</span>
+    <h2 class="section-title">What your child will discover</h2>
+    <p class="section-sub">A quick look at a few of the categories inside:</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-img"><img src="images/sample-alphabet1.webp" alt="Alphabet tracing worksheet sample" loading="lazy"></div>
+        <div class="cat-label">Alphabet Adventures</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-img"><img src="images/sample-numbers1.png" alt="Number practice worksheet sample" loading="lazy"></div>
+        <div class="cat-label">Number Practice</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-img"><img src="images/sample-counting1.webp" alt="Counting worksheet sample" loading="lazy"></div>
+        <div class="cat-label">Count & Write</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-img"><img src="images/sample-matchingbabies1.webp" alt="Match the animal babies worksheet sample" loading="lazy"></div>
+        <div class="cat-label">Match the Babies</div>
+      </div>
+      <div class="cat-card" style="grid-column:span 2;">
+        <div class="cat-img" style="aspect-ratio:8/3;"><img src="images/sample-mazegame1.png" alt="Maze game worksheet sample" loading="lazy"></div>
+        <div class="cat-label">Maze Games</div>
+      </div>
+    </div>
+    <div class="cat-more">+ hundreds more worksheets across 10+ categories</div>
+  </div>
+</section>
+
+<!-- ============ CTA BREAK ============ -->
+<section style="padding:26px 0;">
+  <div class="wrap">
+    <button class="cta-btn" onclick="openCheckout()">Get the Worksheets Now — ₹199</button>
+  </div>
+</section>
+
+<!-- ============ DETAILED CHECKLIST ============ -->
+<section class="section-alt">
+  <div class="wrap">
+    <span class="eyebrow">Everything you get</span>
+    <h2 class="section-title">Unlock your child's bright future today</h2>
+    <div class="check-list">
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>1200+ Pages — Alphabets & Numbers</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>2500+ Colouring & Drawing Worksheets</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>350+ Hindi Worksheets</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>300+ Number & Counting Worksheets</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>800+ Cut & Glue Activities</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>250+ Word Search & Puzzles</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Maze Games & Logic Activities</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Handwriting Practice Sheets</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Bonus: Parenting & Nutrition eBooks</p></div>
+      <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>Lifetime access — print again anytime</p></div>
+    </div>
+    <p style="text-align:center;font-size:13px;color:var(--ink-faint);margin-top:14px;">Regular price ₹1999 — today just ₹199</p>
+  </div>
+</section>
+
+<!-- ============ WHATSAPP PROOF ============ -->
+<section class="section-dark">
+  <div class="wrap">
+    <span class="eyebrow">Real feedback</span>
+    <h2 class="section-title">Shared by parents on WhatsApp</h2>
+  </div>
+  <div class="carousel">
+    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic1.jpeg" alt="Parent WhatsApp feedback screenshot 1" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic2.jpeg" alt="Parent WhatsApp feedback screenshot 2" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic3.jpeg" alt="Parent WhatsApp feedback screenshot 3" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic4.jpeg" alt="Parent WhatsApp feedback screenshot 4" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic5.jpeg" alt="Parent WhatsApp feedback screenshot 5" loading="lazy"></div></div>
+  </div>
+  <p class="scroll-hint on-dark">← swipe to see more →</p>
+</section>
+
+<!-- ============ SAMPLES SHOWCASE ============ -->
+<section class="section-alt">
+  <div class="wrap">
+    <span class="eyebrow">See for yourself</span>
+    <h2 class="section-title">Here are the samples</h2>
+  </div>
+  <div class="carousel">
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples1.png" alt="Worksheet sample 1" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples2.png" alt="Worksheet sample 2" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples3.png" alt="Worksheet sample 3" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples4.webp" alt="Worksheet sample 4" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples5.webp" alt="Worksheet sample 5" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples6.webp" alt="Worksheet sample 6" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples7.webp" alt="Worksheet sample 7" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples8.png" alt="Worksheet sample 8" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples9.webp" alt="Worksheet sample 9" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples10.png" alt="Worksheet sample 10" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples11.png" alt="Worksheet sample 11" loading="lazy"></div></div>
+  </div>
+  <p class="scroll-hint">← swipe to see more →</p>
+  <div class="wrap" style="margin-top:20px;">
+    <button class="cta-btn" onclick="openCheckout()">Get the Worksheets Now — ₹199</button>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Parents are loving it</span>
+    <h2 class="section-title">Real stories, real results</h2>
+    <!-- Replace the 6 cards below with your real collected testimonials —
+         each block is marked so you can find/replace quickly. -->
+    <div class="testi-grid">
+      <div class="testi-card"><!-- TESTIMONIAL 1 -->
+        <div class="testi-stars">★★★★★</div>
+        <p class="quote">"[Replace with testimonial 1 text]"</p>
+        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      </div>
+      <div class="testi-card"><!-- TESTIMONIAL 2 -->
+        <div class="testi-stars">★★★★★</div>
+        <p class="quote">"[Replace with testimonial 2 text]"</p>
+        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      </div>
+      <div class="testi-card"><!-- TESTIMONIAL 3 -->
+        <div class="testi-stars">★★★★★</div>
+        <p class="quote">"[Replace with testimonial 3 text]"</p>
+        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      </div>
+      <div class="testi-card"><!-- TESTIMONIAL 4 -->
+        <div class="testi-stars">★★★★★</div>
+        <p class="quote">"[Replace with testimonial 4 text]"</p>
+        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      </div>
+      <div class="testi-card"><!-- TESTIMONIAL 5 -->
+        <div class="testi-stars">★★★★★</div>
+        <p class="quote">"[Replace with testimonial 5 text]"</p>
+        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      </div>
+      <div class="testi-card"><!-- TESTIMONIAL 6 -->
+        <div class="testi-stars">★★★★★</div>
+        <p class="quote">"[Replace with testimonial 6 text]"</p>
+        <div class="testi-name">[Name]</div><div class="testi-loc">[City] · Parent</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section-alt">
+  <div class="wrap">
+    <span class="eyebrow">Simple process</span>
+    <h2 class="section-title">Easy steps to follow</h2>
+    <div class="steps-row">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div><h3>Buy Now</h3><p>Complete your secure purchase in under a minute</p></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div><h3>Download</h3><p>Get instant access to all 10,000+ worksheets</p></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div><h3>Print & Enjoy</h3><p>Let your child learn through play, screen-free</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT YOU NEED ============ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Getting started</span>
+    <h2 class="section-title">What you need for this bundle</h2>
+    <div class="needs-box">
+      <img src="images/Printer.webp" alt="Home printer" loading="lazy">
+      <div class="needs-list">
+        <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>A curious 2–7 year old</p></div>
+        <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>15 minutes a day</p></div>
+        <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>A printer — colour or black & white, both work</p></div>
+      </div>
+    </div>
+
     <div class="trust-row">
-      <span>🔒 Secure Razorpay</span>
-      <span>📱 Instant WhatsApp</span>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+        <p>Instant Download</p>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2L12 16.4 5.7 21l2.3-7.2-6-4.6h7.6z"/></svg>
+        <p>Premium Quality</p>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <p>WhatsApp Support</p>
+      </div>
     </div>
-    <a href="https://razorpay.me/@shivamkumar2611?amount=CVDUr6Uxp2FOGZGwAHntNg%3D%3D" class="btn-primary" onclick="fbq('track', 'InitiateCheckout');">START MY TRANSFORMATION →</a>
-    <div class="btn-secure">🛡️ 100% Safe & Secure Payments</div>
-    <div class="delivery-note">✅ Payment ke baad turant WhatsApp pe poora plan mil jaayega!</div>
   </div>
 </section>
 
-<!-- PAIN POINTS -->
-<section class="pain">
-  <div class="section-eyebrow">Kya ye aapki story hai?</div>
-  <h2 class="section-title">Kya aap bhi in problems se pareshan hain?</h2>
-  <div class="pain-grid">
-    <div class="pain-card"><span>👗</span>Favourite dress fit nahi aati</div>
-    <div class="pain-card"><span>📸</span>Photos click karwane ka mann nahi karta</div>
-    <div class="pain-card"><span>😔</span>Belly bahar aa gayi hai</div>
-    <div class="pain-card"><span>🥗</span>Har baar diet start hoti hai, fir chhoot jaati hai</div>
-    <div class="pain-card"><span>⏰</span>Gym jane ka time hi nahi</div>
-    <div class="pain-card"><span>😞</span>Confidence kam ho gaya, khud pasand nahi aati</div>
+<!-- ============ WHICH WILL YOU CHOOSE ============ -->
+<section class="section-alt">
+  <div class="wrap">
+    <h2 class="choice-title">Which would you rather do?</h2>
+    <div class="choice-grid">
+      <div class="choice-card a">
+        <p class="label">A. <b>Spend ₹200</b> on something you won't remember tomorrow</p>
+        <div class="cimg"><img src="images/choice-money.webp" alt="Spending money on everyday things" loading="lazy"></div>
+      </div>
+      <div class="choice-card b">
+        <p class="label">B. <b>Invest ₹199</b> in your child's early learning</p>
+        <div class="cimg"><img src="images/choice-kid-studying.webp" alt="Child learning with a worksheet" loading="lazy"></div>
+      </div>
+    </div>
+    <div style="margin-top:20px;">
+      <button class="cta-btn" onclick="openCheckout()">Get the Worksheets Now — ₹199</button>
+    </div>
   </div>
 </section>
-  <!-- FIRST RESULTS TRUST STRIP -->
-<div style="background:var(--terracotta-light);padding:16px 20px;text-align:center;border-radius:12px;margin:16px;">
-  <p style="color:var(--teal);font-weight:700;font-size:14px;margin:0;">⚡ Pehla farak sirf 2 hafton mein dikhna shuru ho jaata hai</p>
-  <p style="color:var(--text-soft);font-size:12px;margin-top:4px;">"2 hafte me hi pet kam dikhne laga, energy bohot badh gayi hai!" — real member</p>
+
+<!-- ============ SECOND COUNTDOWN ============ -->
+<div class="countdown-strip">
+  <div class="wrap countdown-inner">
+    <span class="countdown-label">Limited time offer ends in</span>
+    <div class="countdown-clock">
+      <div><span id="cd2-h">02</span><span>hrs</span></div>
+      <div><span id="cd2-m">45</span><span>min</span></div>
+      <div><span id="cd2-s">00</span><span>sec</span></div>
+    </div>
+  </div>
 </div>
 
-<!-- FUTURE -->
-<section class="imagine">
-  <img src="mirror.jpg" alt="Mirror transformation" style="width:100%;max-width:none;display:block;height:auto;max-height:480px;object-fit:cover;object-position:center;" />
-  <div style="padding:24px 16px;">
-    <div class="section-eyebrow" style="color:rgba(255,255,255,0.7);">Imagine... Sirf 90 din baad</div>
-    <h2 class="section-title" style="color:white;">Mirror me khud ko dekhkar smile karna kaisa hoga? ❤️</h2>
-    <ul class="imagine-list">
-      <li><span class="check-white">✓</span>Wahi favourite dress jo fit nahi aati thi, ab perfectly fit aayegi.</li>
-      <li><span class="check-white">✓</span>Belly pehle se flatter feel hogi.</li>
-      <li><span class="check-white">✓</span>Log bolenge — "Wow! Tum pehle se kaafi fit lag rahi ho."</li>
-      <li><span class="check-white">✓</span>Sabse important — Aap khud ko fir se pyaar karne lagogi.</li>
-    </ul>
-    <div style="background:#1A1A1A;color:white;padding:10px 16px;border-radius:8px;font-size:13px;font-weight:600;margin-top:16px;text-align:center;">Small daily habits. Big lifelong confidence.</div>
-    <h2 style="margin-top:16px;">Aaj Wale Decision Ke Liye Thank You Bolegi ❤️</h2>
-    <p>Wo version of you jo mirror mein khud ko dekh ke smile karti hai — woh sirf 90 din door hai.</p>
-    <a href="https://razorpay.me/@shivamkumar2611?amount=CVDUr6Uxp2FOGZGwAHntNg%3D%3D" class="btn-primary" style="background:white;color:var(--terracotta);" onclick="fbq('track', 'InitiateCheckout');">APNA TRANSFORMATION JOURNEY AAJ SE SHURU KAREIN →</a>
-    <div class="trust-badges" style="margin-top:16px;">
-      <div class="trust-badge" style="color:rgba(255,255,255,0.8);"><span>⚡</span>Instant Access</div>
-      <div class="trust-badge" style="color:rgba(255,255,255,0.8);"><span>♾️</span>Lifetime Access</div>
-      <div class="trust-badge" style="color:rgba(255,255,255,0.8);"><span>🏠</span>Work At Home</div>
+<!-- ============ FAQ ============ -->
+<section class="section-dark">
+  <div class="wrap">
+    <span class="eyebrow">Questions?</span>
+    <h2 class="section-title">Frequently asked questions</h2>
+
+    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
+      <summary style="color:#fff;">What age group is this for?<span class="plus">+</span></summary>
+      <p class="answer" style="color:rgba(255,255,255,0.7);">Ages 2 to 7 — activities are grouped so you can pick what fits your child's stage.</p>
+    </details>
+    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
+      <summary style="color:#fff;">What do I actually receive?<span class="plus">+</span></summary>
+      <p class="answer" style="color:rgba(255,255,255,0.7);">A digital download (PDF/ZIP) with all worksheets, ready to print at home. This is not a physical product.</p>
+    </details>
+    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
+      <summary style="color:#fff;">Do I need a colour printer?<span class="plus">+</span></summary>
+      <p class="answer" style="color:rgba(255,255,255,0.7);">No — every worksheet works fine on a black & white printer too.</p>
+    </details>
+    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
+      <summary style="color:#fff;">What size paper should I use?<span class="plus">+</span></summary>
+      <p class="answer" style="color:rgba(255,255,255,0.7);">Standard A4 paper works for the whole bundle.</p>
+    </details>
+    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
+      <summary style="color:#fff;">How fast will I get access?<span class="plus">+</span></summary>
+      <p class="answer" style="color:rgba(255,255,255,0.7);">Instantly after payment — you'll get a download link on-screen and via WhatsApp/email.</p>
+    </details>
+    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
+      <summary style="color:#fff;">What if I face an issue?<span class="plus">+</span></summary>
+      <p class="answer" style="color:rgba(255,255,255,0.7);">Message us on WhatsApp and we'll sort it out.</p>
+    </details>
+    <details class="faq-item" style="border-color:rgba(255,255,255,0.15);">
+      <summary style="color:#fff;">What payment methods are supported?<span class="plus">+</span></summary>
+      <p class="answer" style="color:rgba(255,255,255,0.7);">UPI, cards, netbanking and wallets — all handled securely through Razorpay.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ GUARANTEE ============ -->
+<section>
+  <div class="wrap">
+    <div class="guarantee-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+      <div>
+        <h3>100% Instant Delivery Guarantee</h3>
+        <p>Your download link is sent the moment payment is confirmed. Any issue — message us on WhatsApp and we'll fix it right away.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- REAL TRANSFORMATIONS -->
-<section class="transformations">
-  <div class="section-eyebrow">Real Transformations</div>
-  <h2 class="section-title">Unki Kahani, Unke Alfaaz</h2>
-
-  <!-- Asha -->
-  <div class="testimonial-card">
-    <div class="before-after">
-      <figure>
-        <img src="lady-before.webp" alt="Asha pehle" />
-        <div class="ba-label">Before</div>
-      </figure>
-      <figure>
-        <img src="lady-after.webp" alt="Asha ab" />
-        <div class="ba-label">After</div>
-      </figure>
-    </div>
-    <div class="testimonial-name">Asha</div>
-    <div class="testimonial-loc">Lucknow</div>
-    <div class="stars">★★★★★</div>
-    <p>Honestly mujhe zyada umeed nahi thi. Gym join kiya tha, 2 hafte mein band kar diya. Diet try ki, kuch nahi hua. Par is baar sirf khane ka order change kiya — bas itna!</p>
-    <p>2-3 hafte mein hi clothes loose hone lage. Face pe glow aaya — dosto ne bhi notice kiya! Aur energy itni badh gayi ki din bhar kaam karne mein mann lagta hai.</p>
-    <p>Koi bhari diet nahi, koi gym nahi — sirf sahi tarika. Itna simple tha aur itna effective — khud hairaan hoon!</p>
-  </div>
-
-  <!-- Riti -->
-  <div class="testimonial-card">
-    <div class="before-after">
-      <figure>
-        <img src="riti-before.webp.jpeg" alt="Riti pehle" />
-        <div class="ba-label">Before</div>
-      </figure>
-      <figure>
-        <img src="riti-after.webp.jpeg" alt="Riti ab" />
-        <div class="ba-label">After</div>
-      </figure>
-    </div>
-    <div class="testimonial-name">Riti</div>
-    <div class="testimonial-loc">Jaipur</div>
-    <div class="stars">★★★★★</div>
-    <p>Mujhe sacchi mein umeed nahi thi ki ghar baithe itna fark pad sakta hai. Maine sirf 10-15 minute daily exercise ki — aur khane mein chote chote changes kiye. Koi gym nahi, koi bhari diet nahi.</p>
-    <p>Dheere dheere 8kg kam hua — aur sabse badi baat, meri party wear dresses jo saalon se almari mein thi, wo sab fit aane lagi!</p>
-    <p>Ab kisi bhi function mein jaane se darne ki zaroorat nahi! Main bahut khush hoon ki maine ye decision liya.</p>
-  </div>
-
-</section>
-
-<!-- WHATSAPP REVIEWS -->
-<section class="wa-reviews">
-  <div class="section-eyebrow">Hamari Member Ka Kya Kehna Hai?</div>
-  <h2 class="section-title">Real WhatsApp Reviews</h2>
-  <div style="display:flex;flex-direction:column;gap:16px;">
-    <img src="review1.jpeg" alt="Customer review" style="width:100%;border-radius:12px;display:block;" />
-    <img src="review2.jpeg" alt="Customer review" style="width:100%;border-radius:12px;display:block;" />
-    <img src="review3.jpeg" alt="Customer review" style="width:100%;border-radius:12px;display:block;" />
-  </div>
-</section>
-</section>
-
-<!-- WHAT YOU GET -->
-<section class="benefits">
-  <div class="section-eyebrow">Is Program Me Kya Milega?</div>
-  <h2 class="section-title">Aapko Kya Milega</h2>
-  <ul class="benefit-list">
-    <li class="benefit-item">
-      <span class="benefit-icon">📅</span>
-      <div class="benefit-text"><strong>90 Days Complete Roadmap</strong><span>Din-by-din ka poora plan — koi confusion nahi</span></div>
-    </li>
-    <li class="benefit-item">
-      <span class="benefit-icon">🏃‍♀️</span>
-      <div class="benefit-text"><strong>Daily 10–15 Min Follow Along Workouts</strong><span>Ghar pe, koi equipment nahi chahiye</span></div>
-    </li>
-    <li class="benefit-item">
-      <span class="benefit-icon">🍛</span>
-      <div class="benefit-text"><strong>Indian Meal Guide (Ghar ka khana)</strong><span>Roti, chawal, daal — kuch nahi chodna</span></div>
-    </li>
-    <li class="benefit-item">
-      <span class="benefit-icon">📊</span>
-      <div class="benefit-text"><strong>Progress Tracker</strong><span>Apni progress dekho, motivated raho</span></div>
-    </li>
-    <li class="benefit-item">
-      <span class="benefit-icon">💪</span>
-      <div class="benefit-text"><strong>Mindset & Motivation</strong><span>Khud ko strong banao — andar se bhi</span></div>
-    </li>
-    <li class="benefit-item">
-      <span class="benefit-icon">🎁</span>
-      <div class="benefit-text"><strong>Bonus Goodies</strong><span>Exclusive templates aur resources</span></div>
-    </li>
-    <li class="benefit-item">
-      <span class="benefit-icon">♾️</span>
-      <div class="benefit-text"><strong>Lifetime Access</strong><span>Hamesha ke liye — kabhi expire nahi hoga</span></div>
-    </li>
-  </ul>
-  <div class="delivery-note" style="margin-top:16px;">📱 Payment ke baad turant WhatsApp pe deliver hoga!</div>
-</section>
-
-<!-- VS TABLE -->
-<section class="vs-section">
-  <div class="section-eyebrow">Comparison</div>
-  <h2 class="section-title">Dusre Programs VS Khud Ke Liye</h2>
-  <div class="vs-table">
-    <div class="vs-header bad">❌ Dusre Programs</div>
-    <div class="vs-middle-header">VS</div>
-    <div class="vs-header good">✅ Khud Ke Liye</div>
-
-    <div class="vs-cell bad"><span class="x-icon">✗</span>Expensive gym memberships</div>
-    <div class="vs-cell mid"></div>
-    <div class="vs-cell good"><span class="check-icon">✓</span>Ghar par easy workouts</div>
-
-    <div class="vs-cell bad"><span class="x-icon">✗</span>Costly supplements</div>
-    <div class="vs-cell mid"></div>
-    <div class="vs-cell good"><span class="check-icon">✓</span>Normal Indian food</div>
-
-    <div class="vs-cell bad"><span class="x-icon">✗</span>Strict diet & bhookh</div>
-    <div class="vs-cell mid"></div>
-    <div class="vs-cell good"><span class="check-icon">✓</span>No supplements, no extra cost</div>
-
-    <div class="vs-cell bad"><span class="x-icon">✗</span>Time consuming</div>
-    <div class="vs-cell mid"></div>
-    <div class="vs-cell good"><span class="check-icon">✓</span>Sirf 10–15 min daily</div>
-
-    <div class="vs-cell bad"><span class="x-icon">✗</span>Sustainable nahi</div>
-    <div class="vs-cell mid"></div>
-    <div class="vs-cell good"><span class="check-icon">✓</span>Sustainable & long term results</div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-  <div class="section-eyebrow">Aapke Sawal, Hamare Jawab</div>
-  <h2 class="section-title">FAQ</h2>
-  <div class="faq-item">
-    <button class="faq-q" onclick="toggleFaq(this)">Kya gym jaana zaroori hai? <span>+</span></button>
-    <div class="faq-a">Bilkul nahi! Ye program sirf ghar pe kiya ja sakta hai — koi equipment ya gym ki zaroorat nahi.</div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-q" onclick="toggleFaq(this)">Kya mujhe apna khana chodna padega? <span>+</span></button>
-    <div class="faq-a">Nahi! Roti, chawal, daal — sab kuch khate rahein. Sirf khane ke order mein thoda change hoga.</div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-q" onclick="toggleFaq(this)">Result kab tak dikhne lagega? <span>+</span></button>
-    <div class="faq-a">Zyadatar members ko 2 hafte mein hi visible fark dikhna shuru ho jaata hai!</div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-q" onclick="toggleFaq(this)">Kya koi supplement leni padegi? <span>+</span></button>
-    <div class="faq-a">Bilkul nahi! Koi supplement, powder ya extra kharcha nahi — sirf real, sustainable changes.</div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final-cta">
-  <div class="final-offer">
-    <div class="offer-badge">🔥 Special Limited Time Offer</div>
-    <div class="offer-original">Worth ₹1999</div>
-    <div style="font-size:13px;color:var(--text-soft);margin-bottom:4px;">Today Only</div>
-    <div class="offer-price">₹99</div>
-    <div class="offer-save">YOU SAVE ₹1900</div>
-    <div style="display:flex;justify-content:center;gap:16px;font-size:12px;color:var(--text-soft);margin-bottom:14px;">
-      <span>🔄 One Time Payment</span>
-      <span>⚡ Instant Access</span>
-    </div>
-    <a href="https://razorpay.me/@shivamkumar2611?amount=CVDUr6Uxp2FOGZGwAHntNg%3D%3D" class="btn-primary" onclick="fbq('track', 'InitiateCheckout');">YES! I WANT MY TRANSFORMATION →</a>
-    <div class="btn-secure" style="margin-top:8px;">🔒 Secure Razorpay Checkout</div>
-    <div class="payment-methods">
-      <span class="pm-badge">VISA</span>
-      <span class="pm-badge">Mastercard</span>
-      <span class="pm-badge">UPI</span>
-      <span class="pm-badge">Razorpay</span>
-    </div>
-  </div>
-  <div class="trust-badges">
-  <div class="trust-badge"><span>🔒</span>100% Secure Payment</div>
-  <div class="trust-badge"><span>📱</span>Instant WhatsApp Delivery</div>
-  <div class="trust-badge"><span>🏠</span>Work At Home Beginners Friendly</div>
-</div>
-<img src="guarantee-badge.png" alt="100% Money Back Guarantee" style="width:320px;height:320px;margin:28px auto 0;display:block;"/>
-</section>
-
-<!-- FUTURE -->
-<section class="future">
-  <div class="section-eyebrow" style="color:rgba(255,255,255,0.7);">Future Wali Aap...</div>
-  <h2>Aaj Wale Decision Ke Liye Thank You Bolegi ❤️</h2>
-  <p>Wo version of you jo mirror mein khud ko dekh ke smile karti hai — woh sirf 90 din door hai.</p>
-  <a href="https://razorpay.me/@shivamkumar2611?amount=CVDUr6Uxp2FOGZGwAHntNg%3D%3D" class="btn-primary" style="background:white;color:var(--terracotta);" onclick="fbq('track', 'InitiateCheckout');">APNA TRANSFORMATION JOURNEY AAJ SE SHURU KAREIN →</a>
-  <div class="trust-badges" style="margin-top:16px;">
-    <div class="trust-badge" style="color:rgba(255,255,255,0.8);"><span>⚡</span>Instant Access</div>
-    <div class="trust-badge" style="color:rgba(255,255,255,0.8);"><span>♾️</span>Lifetime Access</div>
-    <div class="trust-badge" style="color:rgba(255,255,255,0.8);"><span>🏠</span>Work At Home</div>
-  </div>
-</section>
-
-<!-- FOOTER -->
+<!-- ============ FOOTER ============ -->
 <footer>
-  <div class="footer-logo">Khud Ke Liye ❤️</div>
-  <div class="footer-tagline">Ghar pe, bina gym, bina diet change. Khud ko fir se pyaar karne ka safar.</div>
-  <div class="footer-contact">
-    <a href="https://wa.me/916287338461">WhatsApp: +91 6287338461</a> |
-    <a href="mailto:shivamstore1313@gmail.com">shivamstore1313@gmail.com</a>
+  <div class="wrap">
+    <div class="footer-brand">
+      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" fill="#128577"/><path d="M50 70 C50 70 30 60 30 40 C30 28 40 24 50 32 C60 24 70 28 70 40 C70 60 50 70 50 70Z" fill="#0B1F1C"/></svg>
+      <span>Growvio</span>
+    </div>
+    <p class="tag">Screen-free learning worksheets for ages 2–7.</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="refund-policy.html">Refund Policy</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </div>
+    <p class="footer-disclaimer">This site is not part of the Facebook or Instagram website or Meta Platforms, Inc. Additionally, this site is not endorsed by Facebook or Instagram in any way. Facebook is a trademark of Meta Platforms, Inc.<br><br>© 2026 Growvio. All rights reserved.</p>
   </div>
-  <div class="footer-links">
-    <a href="privacy-policy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms & Conditions</a> |
-    <a href="refund-policy.html">Refund Policy</a>
-  </div>
-  <div class="footer-copy">© 2026 Khud Ke Liye. All rights reserved. Made with ❤️ for You</div>
 </footer>
 
 <script>
-  function playVideo() {
-    const wrap = document.getElementById('videoWrap');
-    const frame = document.getElementById('videoFrame');
-    frame.src = 'https://www.youtube.com/embed/IlsJGDzXMPI?autoplay=1';
-    wrap.classList.add('playing');
+  // ============ COUNTDOWN TIMER ============
+  // Visual urgency timer — starts at 2h45m and loops. Purely client-side.
+  function startCountdown(hEl, mEl, sEl){
+    let total = 2*3600 + 45*60;
+    setInterval(() => {
+      total--;
+      if (total < 0) total = 2*3600 + 45*60;
+      const h = Math.floor(total/3600);
+      const m = Math.floor((total%3600)/60);
+      const s = total%60;
+      hEl.textContent = String(h).padStart(2,'0');
+      mEl.textContent = String(m).padStart(2,'0');
+      sEl.textContent = String(s).padStart(2,'0');
+    }, 1000);
   }
+  startCountdown(document.getElementById('cd-h'), document.getElementById('cd-m'), document.getElementById('cd-s'));
+  startCountdown(document.getElementById('cd2-h'), document.getElementById('cd2-m'), document.getElementById('cd2-s'));
 
-  function toggleFaq(btn) {
-    const answer = btn.nextElementSibling;
-    const icon = btn.querySelector('span');
-    answer.classList.toggle('open');
-    icon.textContent = answer.classList.contains('open') ? '−' : '+';
+  // ============ RAZORPAY CHECKOUT ============
+  // Replace YOUR_RAZORPAY_KEY_ID with your real live/test key before publishing.
+  function openCheckout(){
+    const options = {
+      "key": "YOUR_RAZORPAY_KEY_ID",
+      "amount": "19900", // in paise = ₹199
+      "currency": "INR",
+      "name": "Growvio",
+      "description": "10,000+ Kids Worksheets Bundle",
+      "image": "images/productbox.png",
+      "handler": function(response){
+        // On success, redirect to a thank-you page or trigger your delivery flow
+        window.location.href = "thank-you.html";
+      },
+      "theme": { "color": "#0E6E63" }
+    };
+    const rzp = new Razorpay(options);
+    rzp.open();
   }
 </script>
 
