@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <style>
   /* ============ DESIGN TOKENS ============ */
   :root{
@@ -345,8 +344,8 @@
 </head>
 <body>
 
-<!-- Assumes all image files sit in a single "images/" folder next to this HTML file.
-     If your repo uses subfolders (e.g. images/samples/, images/whatsapp/), do a
+<!-- Assumes all image files sit in a single "" folder next to this HTML file.
+     If your repo uses subfolders (e.g. samples/, whatsapp/), do a
      find-and-replace on the folder prefixes below before publishing. -->
 
 <!-- ============ TOP BAR ============ -->
@@ -377,7 +376,7 @@
       </div>
 
       <div class="hero-img-box">
-        <img src="images/productbox.png" alt="Growvio 10,000+ Kids Worksheets bundle" loading="eager">
+        <img src="productbox.png" alt="Growvio 10,000+ Kids Worksheets bundle" loading="eager">
       </div>
 
       <div>
@@ -388,7 +387,7 @@
           </div>
           <div class="price-tag">90% OFF today</div>
         </div>
-        <button class="cta-btn pulse" onclick="openCheckout()">Get the Worksheets Now</button>
+        <a class="cta-btn pulse" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now</a>
         <p class="cta-sub">142 parents grabbed this in the last 24 hours</p>
       </div>
     </div>
@@ -484,23 +483,23 @@
     <p class="section-sub">A quick look at a few of the categories inside:</p>
     <div class="cat-grid">
       <div class="cat-card">
-        <div class="cat-img"><img src="images/sample-alphabet1.webp" alt="Alphabet tracing worksheet sample" loading="lazy"></div>
+        <div class="cat-img"><img src="sample-alphabet1.webp" alt="Alphabet tracing worksheet sample" loading="lazy"></div>
         <div class="cat-label">Alphabet Adventures</div>
       </div>
       <div class="cat-card">
-        <div class="cat-img"><img src="images/sample-numbers1.png" alt="Number practice worksheet sample" loading="lazy"></div>
+        <div class="cat-img"><img src="sample-numbers1.png" alt="Number practice worksheet sample" loading="lazy"></div>
         <div class="cat-label">Number Practice</div>
       </div>
       <div class="cat-card">
-        <div class="cat-img"><img src="images/sample-counting1.webp" alt="Counting worksheet sample" loading="lazy"></div>
+        <div class="cat-img"><img src="sample-counting1.webp" alt="Counting worksheet sample" loading="lazy"></div>
         <div class="cat-label">Count & Write</div>
       </div>
       <div class="cat-card">
-        <div class="cat-img"><img src="images/sample-matchingbabies1.webp" alt="Match the animal babies worksheet sample" loading="lazy"></div>
+        <div class="cat-img"><img src="sample-matchingbabies1.webp" alt="Match the animal babies worksheet sample" loading="lazy"></div>
         <div class="cat-label">Match the Babies</div>
       </div>
       <div class="cat-card" style="grid-column:span 2;">
-        <div class="cat-img" style="aspect-ratio:8/3;"><img src="images/sample-mazegame1.png" alt="Maze game worksheet sample" loading="lazy"></div>
+        <div class="cat-img" style="aspect-ratio:8/3;"><img src="sample-mazegame1.png" alt="Maze game worksheet sample" loading="lazy"></div>
         <div class="cat-label">Maze Games</div>
       </div>
     </div>
@@ -511,7 +510,7 @@
 <!-- ============ CTA BREAK ============ -->
 <section style="padding:26px 0;">
   <div class="wrap">
-    <button class="cta-btn" onclick="openCheckout()">Get the Worksheets Now — ₹199</button>
+    <a class="cta-btn" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now — ₹199</a>
   </div>
 </section>
 
@@ -543,11 +542,11 @@
     <h2 class="section-title">Shared by parents on WhatsApp</h2>
   </div>
   <div class="carousel">
-    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic1.jpeg" alt="Parent WhatsApp feedback screenshot 1" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic2.jpeg" alt="Parent WhatsApp feedback screenshot 2" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic3.jpeg" alt="Parent WhatsApp feedback screenshot 3" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic4.jpeg" alt="Parent WhatsApp feedback screenshot 4" loading="lazy"></div></div>
-    <div class="carousel-card wa-card"><div class="frame"><img src="images/whatsappfeedbackpic5.jpeg" alt="Parent WhatsApp feedback screenshot 5" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic1.jpeg" alt="Parent WhatsApp feedback screenshot 1" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic2.jpeg" alt="Parent WhatsApp feedback screenshot 2" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic3.jpeg" alt="Parent WhatsApp feedback screenshot 3" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic4.jpeg" alt="Parent WhatsApp feedback screenshot 4" loading="lazy"></div></div>
+    <div class="carousel-card wa-card"><div class="frame"><img src="whatsappfeedbackpic5.jpeg" alt="Parent WhatsApp feedback screenshot 5" loading="lazy"></div></div>
   </div>
   <p class="scroll-hint on-dark">← swipe to see more →</p>
 </section>
@@ -559,21 +558,21 @@
     <h2 class="section-title">Here are the samples</h2>
   </div>
   <div class="carousel">
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples1.png" alt="Worksheet sample 1" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples2.png" alt="Worksheet sample 2" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples3.png" alt="Worksheet sample 3" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples4.webp" alt="Worksheet sample 4" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples5.webp" alt="Worksheet sample 5" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples6.webp" alt="Worksheet sample 6" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples7.webp" alt="Worksheet sample 7" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples8.png" alt="Worksheet sample 8" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples9.webp" alt="Worksheet sample 9" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples10.png" alt="Worksheet sample 10" loading="lazy"></div></div>
-    <div class="carousel-card highlight-card"><div class="frame"><img src="images/samples11.png" alt="Worksheet sample 11" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples1.png" alt="Worksheet sample 1" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples2.png" alt="Worksheet sample 2" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples3.png" alt="Worksheet sample 3" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples4.webp" alt="Worksheet sample 4" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples5.webp" alt="Worksheet sample 5" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples6.webp" alt="Worksheet sample 6" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples7.webp" alt="Worksheet sample 7" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples8.png" alt="Worksheet sample 8" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples9.webp" alt="Worksheet sample 9" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples10.png" alt="Worksheet sample 10" loading="lazy"></div></div>
+    <div class="carousel-card highlight-card"><div class="frame"><img src="samples11.png" alt="Worksheet sample 11" loading="lazy"></div></div>
   </div>
   <p class="scroll-hint">← swipe to see more →</p>
   <div class="wrap" style="margin-top:20px;">
-    <button class="cta-btn" onclick="openCheckout()">Get the Worksheets Now — ₹199</button>
+    <a class="cta-btn" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now — ₹199</a>
   </div>
 </section>
 
@@ -647,7 +646,7 @@
     <span class="eyebrow">Getting started</span>
     <h2 class="section-title">What you need for this bundle</h2>
     <div class="needs-box">
-      <img src="images/Printer.webp" alt="Home printer" loading="lazy">
+      <img src="Printer.webp" alt="Home printer" loading="lazy">
       <div class="needs-list">
         <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>A curious 2–7 year old</p></div>
         <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg><p>15 minutes a day</p></div>
@@ -679,15 +678,15 @@
     <div class="choice-grid">
       <div class="choice-card a">
         <p class="label">A. <b>Spend ₹200</b> on something you won't remember tomorrow</p>
-        <div class="cimg"><img src="images/choice-money.webp" alt="Spending money on everyday things" loading="lazy"></div>
+        <div class="cimg"><img src="choice-money.webp" alt="Spending money on everyday things" loading="lazy"></div>
       </div>
       <div class="choice-card b">
         <p class="label">B. <b>Invest ₹199</b> in your child's early learning</p>
-        <div class="cimg"><img src="images/choice-kid-studying.webp" alt="Child learning with a worksheet" loading="lazy"></div>
+        <div class="cimg"><img src="choice-kid-studying.webp" alt="Child learning with a worksheet" loading="lazy"></div>
       </div>
     </div>
     <div style="margin-top:20px;">
-      <button class="cta-btn" onclick="openCheckout()">Get the Worksheets Now — ₹199</button>
+      <a class="cta-btn" href="https://razorpay.me/@shivamkumar2611?amount=KxK8ikz%2BGFZ8lMDydVeeuA%3D%3D" style="text-decoration:none;">Get the Worksheets Now — ₹199</a>
     </div>
   </div>
 </section>
@@ -791,25 +790,6 @@
   startCountdown(document.getElementById('cd-h'), document.getElementById('cd-m'), document.getElementById('cd-s'));
   startCountdown(document.getElementById('cd2-h'), document.getElementById('cd2-m'), document.getElementById('cd2-s'));
 
-  // ============ RAZORPAY CHECKOUT ============
-  // Replace YOUR_RAZORPAY_KEY_ID with your real live/test key before publishing.
-  function openCheckout(){
-    const options = {
-      "key": "YOUR_RAZORPAY_KEY_ID",
-      "amount": "19900", // in paise = ₹199
-      "currency": "INR",
-      "name": "Growvio",
-      "description": "10,000+ Kids Worksheets Bundle",
-      "image": "images/productbox.png",
-      "handler": function(response){
-        // On success, redirect to a thank-you page or trigger your delivery flow
-        window.location.href = "thank-you.html";
-      },
-      "theme": { "color": "#0E6E63" }
-    };
-    const rzp = new Razorpay(options);
-    rzp.open();
-  }
 </script>
 
 </body>
